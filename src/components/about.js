@@ -16,10 +16,10 @@ export class About extends Component {
             <h3 className="subtitle">¡Hello everybody!</h3>
             <br/>
             <p>
-              My name is { data.name } and I'm a { data.role } from Colombia.
+              I'm { data.name }, and I'm a { data.role } from Colombia.
               <br/><br/>
-              I'm a long life learner, always excited to work on the most cutting 
-              edge technologies, ready to help and passionated about the things 
+              I'm a life-long learner, always excited to work on the most 
+              cutting-edge technologies, ready to help and passionated about the things 
               I do on a daily basis
               <br/><br/>
 
@@ -30,14 +30,14 @@ export class About extends Component {
             <ul className="list-unstyled facts-list">
               <li>
                 <i className="fa fa-check" aria-hidden="true"></i>&nbsp;
-                I'm always worried about my work's quality and that's why I'm always
+                I'm always worried about my work's quality and that's why I'm continually 
                 trying to learn and apply the best practices for my tech stack, 
                 and also, share them if possible 
               </li>
               <li>
                 <i className="fa fa-check" aria-hidden="true"></i>&nbsp;
                 I have some experience leading software teams and I feel like that's
-                something I'm good for, but also, something I need to keep improving
+                something I'm good for, but also, something I want to keep improving
               </li>
               <li>
                 <i className="fa fa-check" aria-hidden="true"></i>&nbsp;
@@ -46,8 +46,8 @@ export class About extends Component {
               </li>
               <li>
                 <i className="fa fa-check" aria-hidden="true"></i>&nbsp;
-                I love Open Source and I feel like I owe so much to the community 
-                that's why I like to contribute back in some interesting projects 
+                I love Open Source and I feel like I owe so much to the community, 
+                that's why I like to contribute back in some exciting projects 
                 I find useful, take a look at my Github profile!
               </li>
               <li>

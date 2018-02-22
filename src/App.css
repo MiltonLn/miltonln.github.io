@@ -2,7 +2,7 @@
   text-align: left;
 }
 
-.achievements-list li i, .facts-list li i {
+.achievements-list li i, .facts-list li i, .work-achievements li i {
   color: #009688;
 }
 
@@ -19,6 +19,10 @@
   font-size: 24px;
   margin-bottom: 35px;
   font-weight: 400;
+}
+
+.skills-section .skill-img {
+  margin-bottom: 10px;
 }
 
 .skills-section .sub-subtitle {

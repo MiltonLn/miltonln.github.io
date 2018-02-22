@@ -42,7 +42,7 @@ export const data = {
                     platform for online-gambling using blockchain tech`,
       achievements: [
         'Implemented features and bugfixing to help the platform stability',
-        `Worked on a marketing tool with webscrapping to help company's social 
+        `Worked on a marketing tool with web scraping to support company's social 
          media workflows`
       ]
     },
@@ -78,7 +78,7 @@ export const data = {
               as SIND and Colombian Observatory for Educational 
               Innovation with use of ICT (Take a look at Projects section)`,
         achievements: [
-          'Management of a 10 member team on the projects success',
+          "Management of a ten-member team on the project's success",
           `Complete upgrade of the development process implementing 
            Django's workflow best practices`
         ]
@@ -87,13 +87,14 @@ export const data = {
   education: {
     university: 'Universidad del Valle',
     universityLogo: 'assets/images/univalle.gif',
-    degree: 'B.S. Systems Engineer Degree',
+    degree: 'B.S. Software Engineer',
     period: '2011-2016',
-    description: 'Degree based on computational science and software engineering',
+    description: `Degree on a mixture between computational science and 
+                  software engineering`,
     achievements: [
       `Awarded as the best graduate student of Computer Science because of my 
-       Grade Point Average of 4.22/5 and 6 semestral academic distinctions`,
-      `My research degree project was awarded with a meritorious mention, 
+       Grade Point Average of 4.22/5 and six semestral academic distinctions`,
+      `My research degree project was awarded with a meritorious mention; 
        I built a web tool following a Multitenant Architecture with Django 
        to support the adoption of agile practices from the XP Methodology.`
     ]
@@ -115,7 +116,7 @@ export const data = {
         title: 'Puppetmaster',
         categories: 'backend',
         picture: 'assets/images/projects/puppetmaster.png',
-        techStack: ['Django Admin', 'Puppeteer', 'Social Media', 'Web Scrapping'],
+        techStack: ['Django Admin', 'Puppeteer', 'Social Media', 'Web Scraping'],
         link: {
           label: '🔒 Private Project',
           url: false
@@ -240,20 +241,20 @@ export const data = {
     main: [
       {
         title: 'Python & Django',
+        logo: 'assets/images/python-django.png',
         learnedAt: 2015,
-        skillPercent: 95,
         description: `The Python ecosystem represents a big part in my 
                       professional career, almost any of the projects I've 
-                      been involved into uses it, like Django, which is my 
+                      been involved in uses it, like Django, which is my 
                       killer tool to work in the backend`
       },
       {
         title: 'React / Redux',
+        logo: 'assets/images/react.png',
         learnedAt: 2017,
-        skillPercent: 80,
-        description: `I really love how things are done in the frontend using 
+        description: `I love how things are done in the frontend using 
                       React and how the state is shaped with Redux, they're 
-                      definitely great tools with a bright future to work on`
+                      great tools with a bright future to work on`
       }
     ],
     others: {
@@ -333,10 +334,10 @@ export const data = {
                         file based databases`
         },
       ],
-      'Web Scrapping': [
+      'Web Scraping': [
         {
           name: 'BeautifulSoup4',
-          description: `This was my first approach to the web scrapping world, 
+          description: `This was my first approach to the web scraping world, 
                         I've used it mostly experimentally`
         },
         {

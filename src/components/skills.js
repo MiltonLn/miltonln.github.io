@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
 
 import { data } from '../data'
-import { yearsUntilNow, initializeCharts, tooltip } from '../util'
+import { yearsUntilNow, tooltip } from '../util'
 
 
 export class Skills extends Component {
-  componentDidMount() {
-    initializeCharts()
-  }
 	render() {
 		return <section id="skills-section" className="skills-section section text-center">
 
@@ -22,10 +19,8 @@ export class Skills extends Component {
             { data.skills.main.map(skill =>
               <div key={ skill.title } className="item col-12 col-md-6">
                 <div className="item-inner">
-                  <div className="chart-easy-pie text-center">
-                    <div className="chart-theme-1 chart" data-percent={ skill.skillPercent }>
-                      <span>{ skill.skillPercent }</span>%
-                    </div>
+                  <div className="skill-img">
+                    <img src={ skill.logo } alt="Skill"/>
                   </div>
                   <h4 className="skill-name">{ skill.title }</h4>
                   <div className="level">{ yearsUntilNow(skill.learnedAt) } year(s)</div>

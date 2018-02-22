@@ -28,10 +28,16 @@ export class Experience extends Component {
               <div className="job-desc">
                 <p>{ work.description }</p> 
                 { work.achievements &&
-                  <ul>
-                    { work.achievements.map(achievement =>
-                        <li key={ achievement }>{ achievement }</li>)}
-                  </ul>
+                  <div className="work-achievements">
+                    <h6>Achievements:</h6>
+                    <ul className="list-unstyled">
+                      { work.achievements.map(achievement =>
+                        <li key={ achievement }>
+                          <i className="fa fa-check" aria-hidden="true"></i>&nbsp;
+                          { achievement }
+                        </li>)}
+                    </ul>
+                  </div>
                 }
               </div>
             </div>

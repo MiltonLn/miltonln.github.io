@@ -15,7 +15,7 @@ export class Contact extends Component {
           <div className="dialog">
             <p>
               If you want to discuss about Python, Open Source, Programming communities, Soccer or Videogames
-              I'm the one you are looking for, also I can take some freelance work.
+              I'm the one you are looking for, also, I can take some freelance work.
             </p>
             <p><strong>I can help with the following:</strong></p>
             <ul className="list-unstyled service-list">
