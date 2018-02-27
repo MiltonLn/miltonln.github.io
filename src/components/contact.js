@@ -21,8 +21,9 @@ export class Contact extends Component {
             <ul className="list-unstyled service-list">
               <li><i className="fa fa-check" aria-hidden="true"></i> Front-end development with ReactJS</li>
               <li><i className="fa fa-check" aria-hidden="true"></i> Back-end development with Django/Python</li>
+              <li><i className="fa fa-check" aria-hidden="true"></i> API crafting and maintenance with Django Rest Framework and GraphQL</li>
               <li><i className="fa fa-check" aria-hidden="true"></i> UI development</li>
-              <li><i className="fa fa-check" aria-hidden="true"></i> UX prototyping</li>
+              <li><i className="fa fa-check" aria-hidden="true"></i> Testing and CI processes implementation</li>
             </ul>
             <p>
               Drop me a line at <a href={`mailto:${ data.email }`}>{ data.email }</a>&nbsp;
