@@ -18,7 +18,7 @@ export class Experience extends Component {
                   <h3 className="place">{ work.workPlace.name }</h3>
                 </a>
                 <div className="location">
-                  <i className="fa fa-map-marker" aria-hidden="true"></i>{ work.workPlace.ubication }
+                  <i className="fa fa-map-marker-alt" aria-hidden="true"></i>{ work.workPlace.ubication }
                 </div>
               </div>
               <div className="job-meta">

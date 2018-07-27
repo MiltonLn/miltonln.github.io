@@ -8,6 +8,7 @@ import { Contact } from './contact'
 import { SocialMedia } from './social-media'
 import { About } from './about'
 import { Talks } from './talks'
+import { OpenSource } from './open-source'
 import { data } from '../data'
 import { scrollToSection } from '../util'
 
@@ -41,6 +42,8 @@ export class Header extends Component {
         return <About/>
       case 'talks':
         return <Talks/>
+      case 'openSource':
+        return <OpenSource/>
       default:
         return <span>There's a problem in here!</span>
     }
@@ -114,6 +117,14 @@ export class Header extends Component {
                      id="experiences-selector"
                      href="#experiences-section">
                      Experience
+                   </a>
+                </li>
+                <li className="nav-item">
+                  <a onClick={() => this.switchSection('openSource')}
+                    className="scrollto nav-link"
+                    id="open-source-selector"
+                    href="#open-source-section">
+                    Open Source
                    </a>
                 </li>
                 <li className="nav-item">

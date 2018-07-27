@@ -11,7 +11,7 @@ export const SocialMedia = () =>
         	className="list-inline-item"
         	{...tooltip(`${ media.name }`)}>
           <a href={ media.link } target="_blank">
-            <i className={`fa ${ media.icon }`} aria-hidden="true"></i>
+            <i className={`fab ${ media.icon }`} aria-hidden="true"></i>
           </a>
         </li>
       )}

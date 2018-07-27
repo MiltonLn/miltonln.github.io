@@ -8,7 +8,11 @@ export class Skills extends Component {
 	render() {
 		return <section id="skills-section" className="skills-section section text-center">
 
-        <h2 className="section-title">Professional Skills</h2>
+        <h2 className="section-title">
+          Professional Skills
+          <br/>
+          <small>(Check the tooltips for a brief description)</small>
+        </h2>
 
         <div className="top-skills">
 
@@ -19,8 +23,8 @@ export class Skills extends Component {
             { data.skills.main.map(skill =>
               <div key={ skill.title } className="item col-12 col-md-6">
                 <div className="item-inner">
-                  <div className="skill-img">
-                    <img src={ skill.logo } alt="Skill"/>
+                  <div className="skill-icon">
+                    <i className={ 'fab fa-' + skill.icon }></i>
                   </div>
                   <h4 className="skill-name">{ skill.title }</h4>
                   <div className="level">{ yearsUntilNow(skill.learnedAt) } year(s)</div>

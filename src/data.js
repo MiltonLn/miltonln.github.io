@@ -100,11 +100,11 @@ export const data = {
     ]
   },
   projects: {
-    categories: ['backend', 'frontend', 'open-source'],
+    categories: ['backend', 'frontend', 'API'],
     projectsList: [
       {
         title: 'OddSlingers',
-        categories: 'frontend backend',
+        categories: 'frontend backend API',
         picture: 'assets/images/projects/oddslingers.png',
         techStack: ['Django', 'ReactJS / Redux', 'Blockchain'],
         link: {
@@ -124,7 +124,7 @@ export const data = {
       },
       {
         title: 'InstaCobro',
-        categories: 'frontend backend',
+        categories: 'frontend backend API',
         picture: 'assets/images/projects/instacobro.png',
         techStack: ['Django', 'GraphQL', 'React / Redux', 'React Router'],
         link: {
@@ -134,7 +134,7 @@ export const data = {
       },
       {
         title: 'SIND (Sistema de Información Nacional del Deporte)',
-        categories: 'backend',
+        categories: 'backend frontend',
         picture: 'assets/images/projects/SIND.png',
         techStack: ['Django', 'Multitenant', 'PostgreSQL'],
         link: {
@@ -144,7 +144,7 @@ export const data = {
       },
       {
         title: 'TuNotaria',
-        categories: 'backend frontend',
+        categories: 'backend frontend API',
         picture: 'assets/images/projects/tunotaria.png',
         techStack: ['Django', 'Django Rest Framework', 'Multitenant'],
         link: {
@@ -154,7 +154,7 @@ export const data = {
       },
       {
         title: 'Colombian Observatory for Educational Innovation with use of ICT',
-        categories: 'backend',
+        categories: 'backend frontend',
         picture: 'assets/images/projects/Observatory.png',
         techStack: ['Django', 'Data Preprocessing', 'Statistics & Indicators',
                     'Table Partitioning PostgreSQL'],
@@ -165,7 +165,7 @@ export const data = {
       },
       {
         title: 'MyRightHand',
-        categories: 'backend',
+        categories: 'backend frontend API',
         picture: 'assets/images/projects/MyRightHand.png',
         techStack: ['Stripe Payment Gateway', 'Google Maps',' django-allauth',
                     'i18n and translations', 'on-site and email notification',
@@ -173,16 +173,6 @@ export const data = {
         link: {
           label: '🔒 Private Project',
           url: false
-        }
-      },
-      {
-        title: 'Django Menu Generator',
-        categories: 'open-source',
-        picture: 'assets/images/projects/djangomenugenerator.png',
-        techStack: ['A tool to generate menus in any Django Project'],
-        link: {
-          label: 'View on Github',
-          url: 'https://github.com/LaLogiaDePython/django-menu-generator'
         }
       },
       {
@@ -206,18 +196,8 @@ export const data = {
         }
       },
       {
-        title: 'Puput',
-        categories: 'open-source',
-        picture: 'assets/images/projects/puput.png',
-        techStack: ['Implementation of a Markdown text editor'],
-        link: {
-          label: 'View on Github',
-          url: 'https://github.com/APSL/puput'
-        }
-      },
-      {
         title: 'eXPert',
-        categories: 'backend',
+        categories: 'backend frontend',
         picture: 'assets/images/projects/expert.png',
         techStack: ['Django', 'PostgreSQL', 'Multitenant'],
         link: {
@@ -227,7 +207,7 @@ export const data = {
       },
       {
         title: 'GEDI',
-        categories: 'backend',
+        categories: 'backend frontend',
         picture: 'assets/images/projects/gedi.png',
         techStack: ['Django', 'PostgreSQL'],
         link: {
@@ -241,7 +221,7 @@ export const data = {
     main: [
       {
         title: 'Python & Django',
-        logo: 'assets/images/python-django.png',
+        icon: 'python',
         learnedAt: 2015,
         description: `The Python ecosystem represents a big part in my 
                       professional career, almost any of the projects I've 
@@ -250,7 +230,7 @@ export const data = {
       },
       {
         title: 'React / Redux',
-        logo: 'assets/images/react.png',
+        icon: 'react',
         learnedAt: 2017,
         description: `I love how things are done in the frontend using 
                       React and how the state is shaped with Redux, they're 
@@ -302,6 +282,13 @@ export const data = {
                         used it in some projects and I'm in love with it, I've 
                         done APIs in the backend using graphene-django and 
                         connected to the frontend (React) using Apollo Client`
+        }
+      ],
+      'CMS': [
+        {
+          name: 'Wagtail',
+          description: `In order to build content management systems, Wagtail is 
+                        the tool I feel the most comfortable with`
         }
       ],
       'Testing': [
@@ -471,6 +458,15 @@ export const data = {
                     of architecture and practical advice on this subject in general.`
     },
     {
+      title: 'How to translate a site using Django',
+      event: 'Python Cali Meetup',
+      year: '2018',
+      link: 'https://www.meetup.com/es-ES/Python-Cali/events/248228222/',
+      picture: 'assets/images/talks/translate.jpg',
+      description: `This talk was a comprehensive guide on how to translate a 
+                    Django site using its built-in i18n system`
+    },
+    {
       title: 'Unittesting step by step',
       event: 'Python Cali Meetup',
       year: '2017',
@@ -488,6 +484,22 @@ export const data = {
       description: `Talk about Pythonic Idioms, why they are so important and 
                     good practices to produce more readable code`
     }
+  ],
+  openSource: [
+    {
+      title: 'Django Menu Generator',
+      link: 'https://github.com/LaLogiaDePython/django-menu-generator',
+      picture: 'assets/images/projects/djangomenugenerator.png',
+      description: `This is a handy tool to generate menus in any Django project 
+                    which I built with a friend and we maintain nowadays`
+    },
+    {
+      title: 'Puput',
+      link: 'https://github.com/APSL/puput',
+      picture: 'assets/images/projects/puput.png',
+      description: `After some contributions to the project, as adding support 
+                    to Wagtail 2.0 and Django 2.0, I've become one of the 
+                    maintainers of the project`,
+    },
   ]
-  
 }
