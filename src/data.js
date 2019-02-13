@@ -1,10 +1,9 @@
 export const data = {
   name: 'Milton Lenis',
   role: 'Full Stack Developer',
-  profile: `I'm a software craftsman with a big amount of passion about coding, 
+  profile: `I'm a full stack developer with a big amount of passion about coding, 
             open source, programming communities, soccer and videogames`,
   email: 'miltonln04@gmail.com',
-  phone: '+57 316 616 0159',
   picture: 'assets/images/milton.jpg',
   blog: 'http://lalogiadepython.com',
   socialMedia: [

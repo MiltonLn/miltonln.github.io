@@ -64,7 +64,7 @@ export class Header extends Component {
 
           <SocialMedia/>
         </div>
-            
+
         <div className="intro">
           <div className="container text-center">
             <img className="profile-image" src={ data.picture } alt=""/>
@@ -77,20 +77,17 @@ export class Header extends Component {
             </div>
           </div>
         </div>
-            
+
         <div className="contact-info">
           <div className="container text-center">
             <ul className="list-inline">
               <li className="email list-inline-item">
                 <i className="fa fa-envelope"></i><a href="mailto:someone@example.com">{ data.email }</a>
               </li>
-              <li className="list-inline-item">
-                <i className="fa fa-phone"></i> <a href="tel: 0123456789">{ data.phone }</a>
-              </li>
             </ul>
           </div>
         </div>
-            
+
         <div className="page-nav-space-holder">
           <div id="page-nav-wrapper" className="page-nav-wrapper text-center">
             <div className="container">
