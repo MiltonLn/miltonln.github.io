@@ -61,10 +61,6 @@
 	width: 210px;
 }
 
-.skills-section .skill-tag {
-	cursor: pointer;
-}
-
 .portfolio-section .item .content {
   height: 250px;
 }
@@ -140,5 +136,12 @@
   .talk-info {
     width: 100%;
     display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .timeline .location {
+    position: relative;
+    margin-bottom: 5px;
   }
 }
