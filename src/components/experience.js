@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-import { data } from '../data'
-
 
 export class Experience extends Component {
   render() {
@@ -11,7 +9,7 @@ export class Experience extends Component {
 
         <div className="timeline">
 
-          { data.experience.map(work =>
+          { this.props.data.experience.map(work =>
             <div key={ work.workPlace.name } className="item">
               <div className="work-place">
                 <a href={ work.workPlace.webPage } target="_blank">
@@ -26,7 +24,7 @@ export class Experience extends Component {
                 <div className="time">{ work.period }</div>
               </div>
               <div className="job-desc">
-                <p>{ work.description }</p> 
+                <p>{ work.description }</p>
                 { work.achievements &&
                   <div className="work-achievements">
                     <h6>Achievements:</h6>
@@ -42,9 +40,7 @@ export class Experience extends Component {
               </div>
             </div>
           )}
-            
         </div>
-        
     </section>
   }
 }
