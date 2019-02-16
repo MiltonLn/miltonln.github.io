@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 
-import { data } from '../data'
 import { yearsUntilNow, tooltip } from '../util'
 
 
@@ -10,8 +9,6 @@ export class Skills extends Component {
 
         <h2 className="section-title">
           Professional Skills
-          <br/>
-          <small>(Check the tooltips for a brief description)</small>
         </h2>
 
         <div className="top-skills">
@@ -20,7 +17,7 @@ export class Skills extends Component {
 
           <div className="row">
 
-            { data.skills.main.map(skill =>
+            { this.props.data.skills.main.map(skill =>
               <div key={ skill.title } className="item col-12 col-md-6">
                 <div className="item-inner">
                   <div className="skill-icon">
@@ -37,23 +34,22 @@ export class Skills extends Component {
 
           </div>
         </div>
-        
+
         <div className="other-skills">
 
           <h3 className="subtitle">Tech Skills</h3>
 
           <div className="row">
-            { Object.keys(data.skills.others).map(techSkillCategory =>
+            { Object.keys(this.props.data.skills.tech).map(techSkillCategory =>
               <div key={ techSkillCategory } className="col-md-6">
                 <h4 className="sub-subtitle">
                   { techSkillCategory }
                 </h4>
                 <div className="misc-skills">
-                  { data.skills.others[techSkillCategory].map(skill =>
-                    <span {...tooltip(skill.description, 'right')}
-                          className="skill-tag"
-                          key={ skill.name }>
-                      { skill.name }
+                  { this.props.data.skills.tech[techSkillCategory].map(skill =>
+                    <span className="skill-tag"
+                          key={ skill }>
+                      { skill }
                     </span>
                   )}
                 </div>
@@ -65,9 +61,9 @@ export class Skills extends Component {
 
         <div className="personal-skills">
 
-          <h3 className="subtitle">Personal Skills</h3>
+          <h3 className="subtitle">Soft Skills</h3>
           <div className="misc-skills">
-            { data.skills.personal.map(skill =>
+            { this.props.data.skills.soft.map(skill =>
               <div className="row" key={ skill.name }>
                 <div className="col-md-12">
                   <span {...tooltip(skill.description, 'right')}
@@ -80,7 +76,6 @@ export class Skills extends Component {
           </div>
 
         </div>
-        
     </section>
 	}
 }
