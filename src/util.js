@@ -5,12 +5,12 @@ export const tooltip = (text, placement='bottom') => ({
     'data-toggle': 'tooltip',
     'data-placement': placement,
     onMouseEnter: (e) => {
-        $('[data-toggle="tooltip"]').tooltip('hide')
-        $(e.target).tooltip()
+      $('[data-toggle="tooltip"]').tooltip('hide')
+      $(e.target).tooltip()
     },
     onMouseLeave: (e) => {
-        $('[data-toggle="tooltip"]').tooltip('hide')
-        $(e.target).tooltip('hide')
+      $('[data-toggle="tooltip"]').tooltip('hide')
+      $(e.target).tooltip('hide')
     },
 })
 
@@ -21,26 +21,26 @@ export const yearsUntilNow = (initialYear) => {
 
 export const initializeIsotopePlugin = () => {
     const $container = $('.isotope')
-    
+
     $container.imagesLoaded(function () {
-        $('.isotope').isotope({
-            itemSelector: '.item'
-        })
+      $('.isotope').isotope({
+          itemSelector: '.item'
+      })
     })
-    
+
     // filter items on click
     $('#filters').on( 'click', '.type', function() {
       const filterValue = $(this).attr('data-filter')
       $container.isotope({ filter: filterValue })
     })
-    
+
     // change is-checked class on buttons
     $('.filters').each( function( i, typeGroup ) {
-        const $typeGroup = $( typeGroup )
-        $typeGroup.on( 'click', '.type', function() {
-          $typeGroup.find('.active').removeClass('active')
-          $( this ).addClass('active')
-        })
+      const $typeGroup = $( typeGroup )
+      $typeGroup.on( 'click', '.type', function() {
+        $typeGroup.find('.active').removeClass('active')
+        $( this ).addClass('active')
+      })
     })
 }
 

@@ -9,7 +9,7 @@ import { SocialMedia } from './social-media'
 import { About } from './about'
 import { Talks } from './talks'
 import { OpenSource } from './open-source'
-import { data } from '../data'
+import { Blog } from './blog'
 import { scrollToSection } from '../util'
 
 
@@ -29,21 +29,23 @@ export class Header extends Component {
   renderSection() {
     switch(this.state.section) {
       case 'experiences':
-        return <Experience/>
+        return <Experience data={this.props.data}/>
       case 'education':
-        return <Education/>
+        return <Education data={this.props.data}/>
       case 'skills':
-        return <Skills/>
+        return <Skills data={this.props.data}/>
       case 'projects':
-        return <Projects/>
+        return <Projects data={this.props.data}/>
       case 'contact':
-        return <Contact/>
+        return <Contact data={this.props.data}/>
       case 'about':
-        return <About/>
+        return <About data={this.props.data}/>
       case 'talks':
-        return <Talks/>
+        return <Talks data={this.props.data}/>
       case 'openSource':
-        return <OpenSource/>
+        return <OpenSource data={this.props.data}/>
+      case 'blog':
+        return <Blog data={this.props.data}/>
       default:
         return <span>There's a problem in here!</span>
     }
@@ -54,7 +56,7 @@ export class Header extends Component {
       <header key="header" className="header">
         <div className="top-bar container-fluid">
           <div className="actions">
-            <a className="btn d-none d-md-inline-block" href="mailto:someone@example.com">
+            <a className="btn d-none d-md-inline-block" href="mailto:miltonln04@gmail.com">
               <i className="fa fa-paper-plane" aria-hidden="true"></i> Drop me a line
             </a>
             <a className="btn" href="assets/pdf/cv.pdf" target="_blank" rel="noreferrer noopener">
@@ -62,17 +64,17 @@ export class Header extends Component {
             </a>
           </div>
 
-          <SocialMedia/>
+          <SocialMedia data={this.props.data}/>
         </div>
 
         <div className="intro">
           <div className="container text-center">
-            <img className="profile-image" src={ data.picture } alt=""/>
-            <h1 className="name">{ data.name }</h1>
-            <div className="title">{ data.role }</div>
+            <img className="profile-image" src={ this.props.data.picture } alt=""/>
+            <h1 className="name">{ this.props.data.name }</h1>
+            <div className="title">{ this.props.data.role }</div>
             <div className="profile">
               <p>
-                { data.profile }
+                { this.props.data.profile }
               </p>
             </div>
           </div>
@@ -82,7 +84,7 @@ export class Header extends Component {
           <div className="container text-center">
             <ul className="list-inline">
               <li className="email list-inline-item">
-                <i className="fa fa-envelope"></i><a href="mailto:someone@example.com">{ data.email }</a>
+                <i className="fa fa-envelope"></i><a href="mailto:someone@example.com">{ this.props.data.email }</a>
               </li>
             </ul>
           </div>
@@ -93,7 +95,7 @@ export class Header extends Component {
             <div className="container">
               <ul id="page-nav" className="nav page-nav list-inline">
                 <li className="nav-item">
-                  <a onClick={() => this.switchSection('about')} 
+                  <a onClick={() => this.switchSection('about')}
                      className="scrollto nav-link"
                      id="about-selector"
                      href="#about-section">
@@ -101,7 +103,7 @@ export class Header extends Component {
                    </a>
                 </li>
                 <li className="nav-item">
-                  <a onClick={() => this.switchSection('skills')} 
+                  <a onClick={() => this.switchSection('skills')}
                      className="scrollto nav-link"
                      id="skills-selector"
                      href="#skills-section">
@@ -109,7 +111,7 @@ export class Header extends Component {
                    </a>
                 </li>
                 <li className="nav-item">
-                  <a onClick={() => this.switchSection('experiences')} 
+                  <a onClick={() => this.switchSection('experiences')}
                      className="scrollto nav-link"
                      id="experiences-selector"
                      href="#experiences-section">
@@ -125,7 +127,7 @@ export class Header extends Component {
                    </a>
                 </li>
                 <li className="nav-item">
-                  <a onClick={() => this.switchSection('projects')} 
+                  <a onClick={() => this.switchSection('projects')}
                      className="scrollto nav-link"
                      id="projects-selector"
                      href="#projects-section">
@@ -133,7 +135,7 @@ export class Header extends Component {
                    </a>
                 </li>
                 <li className="nav-item">
-                  <a onClick={() => this.switchSection('talks')} 
+                  <a onClick={() => this.switchSection('talks')}
                      className="scrollto nav-link"
                      id="talks-selector"
                      href="#talks-section">
@@ -141,7 +143,7 @@ export class Header extends Component {
                    </a>
                 </li>
                 <li className="nav-item">
-                  <a onClick={() => this.switchSection('education')} 
+                  <a onClick={() => this.switchSection('education')}
                      className="scrollto nav-link"
                      id="education-selector"
                      href="#education-section">
@@ -149,15 +151,15 @@ export class Header extends Component {
                    </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link"
-                     href={ data.blog }
-                     target="_blank"
-                     rel="noopener noreferrer">
+                  <a className="scrollto nav-link"
+                     onClick={() => this.switchSection('blog')}
+                     id="blog-selector"
+                     href="#blog-section">
                      Blog
                    </a>
                 </li>
                 <li className="nav-item">
-                  <a onClick={() => this.switchSection('contact')} 
+                  <a onClick={() => this.switchSection('contact')}
                      className="scrollto nav-link"
                      id="contact-selector"
                      href="#contact-section">
@@ -168,7 +170,7 @@ export class Header extends Component {
             </div>
           </div>
         </div>
-            
+
       </header>,
       <div key="section-container" className="wrapper container">
         { this.renderSection() }
