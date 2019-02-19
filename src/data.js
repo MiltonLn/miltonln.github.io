@@ -52,8 +52,9 @@ export const DATA = {
       "period": "2017 - Present",
       "description": "Work with Django and React / Redux on a cool e-sport poker platform for online-gambling using blockchain tech",
       "achievements": [
-        "Implemented features and bugfixing to help the platform stability",
-        "Worked on a marketing tool with web scraping to support company's social media workflows"
+        "Worked on a marketing tool with web scraping to support company's social media workflows",
+        "Improved banking concurrency with a data-orientedarchitecture",
+        "Implemented an archiving strategy to keep the site tables clean"
       ]
     },
     {
@@ -370,7 +371,7 @@ export const DATA = {
       "year": "2018",
       "link": "https://2018.pycon.co/talks/multitenant-architectures-in-python/",
       "picture": "assets/images/talks/multitenant.jpg",
-      "description": "This talk was for the most important Python event in my country, I talked a little about what multitenant architectures are, what types exist, how to implement one with Django and Postgresql, my experiences implementing this type of architecture and practical advice on this subject in general."
+      "excerpt": "Talk about what multitenant architectures are, what types exist, how to implement one with Django and Postgresql, my experiences implementing this type of architecture and practical advice on this subject in general."
     },
     {
       "title": "How to translate a site using Django",
@@ -378,7 +379,7 @@ export const DATA = {
       "year": "2018",
       "link": "https://www.meetup.com/es-ES/Python-Cali/events/248228222/",
       "picture": "assets/images/talks/translate.jpg",
-      "description": "This talk was a comprehensive guide on how to translate a Django site using its built-in i18n system"
+      "excerpt": "Comprehensive guide on how to translate a Django site using its built-in i18n system"
     },
     {
       "title": "Unittesting step by step",
@@ -386,7 +387,7 @@ export const DATA = {
       "year": "2017",
       "link": "https://www.meetup.com/es-ES/Python-Cali/events/242279852/",
       "picture": "assets/images/talks/unittesting.jpg",
-      "description": "Talk about unittesting in Python and its importance with a live example"
+      "excerpt": "Talk about unittesting in Python and its importance with a live example"
     },
     {
       "title": "Introduction to the Pythonista Style",
@@ -394,21 +395,87 @@ export const DATA = {
       "year": "2017",
       "link": "https://www.meetup.com/es-ES/Python-Cali/events/240121439/",
       "picture": "assets/images/talks/pythonista.jpg",
-      "description": "Talk about Pythonic Idioms, why they are so important and good practices to produce more readable code"
+      "excerpt": "Talk about Pythonic Idioms, why they are so important and good practices to produce more readable code"
     }
   ],
   "openSource": [
     {
       "title": "Django Menu Generator",
       "link": "https://github.com/LaLogiaDePython/django-menu-generator",
-      "picture": "assets/images/projects/djangomenugenerator.png",
-      "description": "This is a handy tool to generate menus in any Django project which I built with a friend and we maintain nowadays"
+      "stars": 12,
+      "excerpt": "A straightforward menu generator for Django",
+      "description": `When I was working on a scaffolder for Django some years ago,
+      I needed to generate HTML menus for the apps I was generating, I didn't
+      find anything but a very out-to-date project called django-menuware,
+      I opened a few PRs to update the Django support to newer versions and
+      adding support for Font Awesome icons but the author didn't want to add
+      newer features. So, I asked him if I could fork the project and release it
+      under a new name, he agreed.
+      <br/>
+      <br/>
+      So, me together with [Juan Diego García](https://twitter.com/juandgoc) started
+      this repo as a fork from django-menuware but we actually changed the whole codebase
+      added a lot of cool documentation in Read The Docs, new features, tests, CI integration with Travis,
+      and a lot more.
+      <br/>
+      <br/>
+      **This was my first official approach to Open Source as a maintainer** and **it helped me
+      to understand all the phases of an OSS project**, we currently maintain it and
+      if you want to generate Django Menus using Python Dictionaries from a file, this
+      project is a very good option.`
     },
     {
       "title": "Puput",
       "link": "https://github.com/APSL/puput",
       "picture": "assets/images/projects/puput.png",
-      "description": "After some contributions to the project, as adding support to Wagtail 2.0 and Django 2.0, I've become one of the maintainers of the project"
+      "stars": 324,
+      "excerpt": "A Django blog app implemented in Wagtail",
+      "description": `Some years ago, I wanted to create [my personal blog](${BLOG_LINK}) to use it as a
+      learning tool, my idea was to write an article about each thing I was learning, that way I could
+      remember it any time I need, and probably somebody could find the information useful.
+      <br/>
+      <br/>
+      My idea also was to stick to the Django ecosystem, which I love a lot, that's how I found the
+      [Wagtail CMS](https://wagtail.io/) a django-developers-friendly CMS, after that, with some research
+      I could find Puput, a Wagtail-based blog engine, so I started to develop my blog with it.
+      <br/>
+      <br/>
+      Puput had some limitations by the time like no support for Django 2.0 or newer versions of Wagtail,
+      so **I opened some PRs giving support to those versions**, and **cleaned a lot of the code and docs**
+      with the time, [Marc Tudurí](https://twitter.com/marctuduri) the original author of the project and a very nice guy
+      invited me to **become part of the maintainers team**, and with some time, **he granted me the role of main maintainer**
+      since I was actively contributing to the project and he wasn't using it too much, I try to maintain the
+      project nowadays`
+    },
+    {
+      "title": "redux-time",
+      "link": "https://github.com/Monadical-SAS/redux-time",
+      "picture": "assets/images/projects/redux-time.png",
+      "stars": 71,
+      "excerpt": "∞ Novel Redux animation library that lets you declaratively render changing state over time",
+      "description": `redux-time is an internal tool the guys at [Monadical](https://monadical.com/) developed
+      to sync and handle all of their animations in their cool poker site [OddsLingers](https://oddslingers.com/table/24ec19fe/1:2-NLHE-Tavern-2/).
+      <br/>
+      <br/>
+      When I first joined the company with my friend [Juan Diego García](https://twitter.com/juandgoc), our first assigned task was
+      to pair and contribute to this project and **add a Timeline Component to graphically see the animations progress and time, like pipelines**
+      other than that, **I cleaned some docs**, **fixed some examples** and **did some bugfixing into the project**.`
+    },
+    {
+      "title": "wagtailmarkdownblock",
+      "link": "https://github.com/FlipperPA/wagtailmarkdownblock",
+      "stars": 10,
+      "excerpt": "Wagtail Markdown Block provides Markdown editing and display blocks in Wagtail",
+      "description": `When I was developing [my blog](https://www.lalogiadepython.com/) using [Puput](https://github.com/APSL/puput)
+      I wanted to use Markdown as the markup language for my content, since Wagtail didn't provided built-in support for Markdown
+      I found this project but it lacked a lot of features and it was pretty immature.
+      <br/>
+      <br/>
+      Then, **I contributed adding a SimpleMDE live editor to the project** which changed a lot this tool, also
+      **I cleaned a lot of the code** and **improved the \`python-markdown\` implementation**.
+      <br/>
+      <br/>
+      Nowadays I'm still using this tool in my blog to write my posts`
     }
   ],
   "contactContent": `

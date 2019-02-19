@@ -11,6 +11,10 @@
   padding-bottom: 10px;
 }
 
+.education-section .item {
+  margin-bottom: 20px;
+}
+
 .section-title {
   font-size: 30px;
 }
@@ -106,6 +110,35 @@
   display: inline-block;
 }
 
+.talk-info .dialog {
+  color: #666;
+}
+
+.item-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-img-container img {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  max-height: 250px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.item-img-container .image-title {
+  font-family: 'Staatliches', cursive;
+  position: absolute;
+  margin: 0;
+  text-align: center;
+  max-width: 40%;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 @media (max-width: 767px) {
   .page-nav-wrapper .page-nav li {
     margin: 0;
@@ -136,6 +169,14 @@
   .talk-info {
     width: 100%;
     display: block;
+  }
+
+  .item-img-container img {
+    max-width: 100%;
+  }
+
+  .item-img-container .image-title {
+    max-width: 50%;
   }
 }
 
