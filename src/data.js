@@ -7,11 +7,27 @@ export const DATA = {
   "name": NAME,
   "role": ROLE,
   "profile": "I have a big amount of passion about coding, open source, programming communities, soccer and videogames",
-  "bio": `¡Hello everybody!
+  "bio": `My name is Milton Lenis and I'm a **Full Stack Developer** from **Colombia**, currently based in **Cali, Colombia**
 
-    My name is Milton Lenis and I'm a Full Stack Developer from Colombia. Also, I'm currently based in **Cali, Colombia**
+  I'm a life-long learner, always excited to work on the most cutting edge technologies, ready to help and passionated about the things I do on a daily basis.
 
-    I'm a life-long learner, always excited to work on the most cutting edge technologies, ready to help and passionated about the things I do on a daily basis."`,
+  I always loved to create things with code since I was a Software Engineering student at Universidad del Valle where I discovered my passion
+  for web development and python in the last years of my degree, in fact, I started my first job as a developer there.
+
+  I've been working in web development on the Python ecosystem since 2015, I've faced several kind of projects, like **e-commerce, social media,
+  fintech, Data Visualisation, and Multitenant (SaaS) platforms**.
+
+  I also like to contribute to Open Source projects whenever I can, that's my way to thank the developers who create the cool tools
+  I use on a daily basis.
+
+  Another thing I enjoy a lot is to be part of programming communities in which I've organized events like **local meetups, Django Girls Workshops,
+  PyDays** and our national **PyCon**. Sometimes I also **give some talks**.
+
+  When I'm not doing something related to programming I'm usually playing videogames or playing soccer with my friends. I also enjoy a wonderful
+  life with my wife and our little dog Chili.
+
+  Welcome to my page and please don't hesitate on checking every section you want to dig deeper about me, if you have any question feel free to
+  contact me.`,
   "email": EMAIL,
   "picture": "assets/images/milton.jpg",
   "socialMedia": [
@@ -371,7 +387,15 @@ export const DATA = {
       "year": "2018",
       "link": "https://2018.pycon.co/talks/multitenant-architectures-in-python/",
       "picture": "assets/images/talks/multitenant.jpg",
-      "excerpt": "Talk about what multitenant architectures are, what types exist, how to implement one with Django and Postgresql, my experiences implementing this type of architecture and practical advice on this subject in general."
+      "excerpt": "Talk about what multitenant architectures are, what types exist, how to implement one with Django and Postgresql, my experiences implementing this type of architecture and practical advice on this subject in general.",
+      "description": `PyCon Colombia is the biggest and most important Python event in Colombia, since I knew about it, it became like a dream
+      to talk in an event of such magnitude, when CFPs for PyCon Colombia 2018 were open, I didn't hesitate to sent my proposal, I decided to
+      go with the subject I handled better at the moment: Multitenant Architectures.
+      <br/>
+      <br/>
+      Fortunately my proposal was accepted and I had the chance of presenting my talk at the event. I talked
+      about what multitenant architectures are, what types exist, how to implement one with Django and Postgresql,
+      my experiences implementing this type of architecture and practical advice on this subject in general.`
     },
     {
       "title": "How to translate a site using Django",
@@ -379,7 +403,16 @@ export const DATA = {
       "year": "2018",
       "link": "https://www.meetup.com/es-ES/Python-Cali/events/248228222/",
       "picture": "assets/images/talks/translate.jpg",
-      "excerpt": "Comprehensive guide on how to translate a Django site using its built-in i18n system"
+      "language": "Spanish",
+      "excerpt": "Comprehensive guide on how to translate a Django site using its built-in i18n system",
+      "description": `Django has a powerful built-in translation system and I have implemented it in a few
+      projects, this is so cool that I wanted to spread the word about how easy is to support multiple languages
+      in your site using Django, so I crafted this talk and gave it at Python Cali Meetup group. In this talk,
+      I described how to setup i18n from scratch, showed how it works on a dummy project, and finally showed a real
+      example of its cappabilities.
+      <br/>
+      <br/>
+      I also wrote [this spanish blog post](https://www.lalogiadepython.com/2018/03/01/como-traducir-un-sitio-web-con-django/) about the topic.`
     },
     {
       "title": "Unittesting step by step",
@@ -387,15 +420,34 @@ export const DATA = {
       "year": "2017",
       "link": "https://www.meetup.com/es-ES/Python-Cali/events/242279852/",
       "picture": "assets/images/talks/unittesting.jpg",
-      "excerpt": "Talk about unittesting in Python and its importance with a live example"
+      "language": "Spanish",
+      "excerpt": "Talk about unittesting in Python and its importance with a live example",
+      "description": `I love the TDD approach, writing unit tests is part of my day-to-day job,
+      so, I wanted to help the people who maybe don't understand the value of testing to own this philosophy,
+      that's why I crafted this talk centered mostly on python unittest library.
+      <br/>
+      <br/>
+      In this talk I explained the value and importance of testing, showed of to write good tests and
+      finished with a live coding session writing tests for a dummy project with numbers`
     },
     {
       "title": "Introduction to the Pythonista Style",
       "event": "Python Cali Meetup",
       "year": "2017",
+      "language": "Spanish",
       "link": "https://www.meetup.com/es-ES/Python-Cali/events/240121439/",
       "picture": "assets/images/talks/pythonista.jpg",
-      "excerpt": "Talk about Pythonic Idioms, why they are so important and good practices to produce more readable code"
+      "excerpt": "Talk about Pythonic Idioms, why they are so important and good practices to produce more readable code",
+      "description": `This was my very first talk, I wanted so bad to join my local Python community, I reached to them
+      and proposed this talk to start my public speaking career.
+      <br/>
+      <br/>
+      Since I love a lot the clean and readable code, I decided to go with a talk about it. Python lets us write beautiful code
+      using some popular ways to do certain stuff in a clean way called 'Pythonic Idioms', this is more of a community term than
+      a language feature, but, if you follow the 'Pythonic Idioms' your code will be a lot better and less bug prone.
+      <br/>
+      <br/>
+      In this talk I covered all of the Pythonic Idioms I know and contrasted wrong ways of writing Python code vs the Pythonic way`
     }
   ],
   "openSource": [
@@ -501,7 +553,8 @@ export const DATA = {
       "logo": "assets/images/logo-logia.png",
       "description": `I have a blog called **"La Logia de Python"** in which I try to
       write about the things I learn, the things I figure out about the tools I use
-      or about some random thoughts I usually have, you can expect mostly Python content from it
+      or about some random thoughts I usually have, you can expect mostly Python content from it written
+      sometimes in English, sometimes in Spanish.
       <br/>
       <br/>
       You can take a look at it [here](${BLOG_LINK})`
