@@ -111,11 +111,11 @@ export class Header extends Component {
                    </a>
                 </li>
                 <li className="nav-item">
-                  <a onClick={() => this.switchSection('experiences')}
+                  <a onClick={() => this.switchSection('projects')}
                      className="scrollto nav-link"
-                     id="experiences-selector"
-                     href="#experiences-section">
-                     Experience
+                     id="projects-selector"
+                     href="#projects-section">
+                     Projects
                    </a>
                 </li>
                 <li className="nav-item">
@@ -127,11 +127,11 @@ export class Header extends Component {
                    </a>
                 </li>
                 <li className="nav-item">
-                  <a onClick={() => this.switchSection('projects')}
+                  <a onClick={() => this.switchSection('experiences')}
                      className="scrollto nav-link"
-                     id="projects-selector"
-                     href="#projects-section">
-                     Projects
+                     id="experiences-selector"
+                     href="#experiences-section">
+                     Experience
                    </a>
                 </li>
                 <li className="nav-item">
