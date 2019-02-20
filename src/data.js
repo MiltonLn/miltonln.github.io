@@ -561,27 +561,26 @@ export const DATA = {
   },
   "events": [
     {
-      "title": "Python Cali Meetup",
+      "title": "PyCon Colombia 2019",
       "role": "Co-Organizer",
-      "timePeriod": "2017 - Current",
-      "logo": 'assets/images/events/python-cali/logo.png',
+      "timePeriod": "2019",
+      "logo": 'assets/images/events/pycon-colombia-2019/logo.png',
       "pictures": [
-        'assets/images/events/python-cali/group.jpg',
+        'assets/images/events/pycon-colombia-2019/team.jpg',
+        'assets/images/events/pycon-colombia-2019/auditorium.jpg',
+        'assets/images/events/pycon-colombia-2019/people.jpg',
       ],
-      "excerpt": "Local Python group for my city Cali, Colombia",
-      "description": ""
-    },
-    {
-      "title": "Django Girls Cali 2018",
-      "role": "Organizer",
-      "timePeriod": "2018",
-      "logo": 'assets/images/events/django-girls-cali-2018/logo.png',
-      "pictures": [
-        'assets/images/events/django-girls-cali-2018/foto-grupal.jpg',
-        'assets/images/events/django-girls-cali-2018/me.jpg',
-      ],
-      "excerpt": "Django workshop for women who want to have a first approach to tech and coding",
-      "description": ""
+      "excerpt": "The biggest and most important Python Conference in Colombia",
+      "description": `After my compromise with the Django Girls Cali 2018 workshop, [John Roa](https://twitter.com/jhonjairoroa87) Chief Organizer of PyCon Colombia
+      recognized my willingness to help the community and invited me to become an Organizer for PyCon Colombia.
+      <br/>
+      <br/>
+      My main goal, was to improve the quality of the talks and workshops in the event, we worked a lot on the conference the whole 2018. I suggested a lot of
+      changes in the proposals reviewing process, I introduced an anonymous reviewing process to avoid bias, implemented a lot of reviewing criteria to align the team
+      and also helped another branches of the conference.
+      <br/>
+      <br/>
+      At February 2019 we had a great PyCon Colombia, most of the attendees were pretty satisfied with the quality of the talks and the event in general.`
     },
     {
       "title": "PyDay Cali 2018",
@@ -593,20 +592,64 @@ export const DATA = {
         'assets/images/events/pyday-cali-2018/team.jpeg',
         'assets/images/events/pyday-cali-2018/random-pic.jpeg',
       ],
-      "excerpt": "A-whole-day conference dedicated to Python and its ecosystem",
-      "description": ""
+      "excerpt": "A-whole-day conference dedicated to Python and its ecosystem, first one ever in Colombia",
+      "description": `The Python Cali community has been one of the most active Python Communities in Colombia, running monthly meetups regularly. But we wanted
+      more, we wanted to create a bigger event, something more ambitious. So we started to brainstorm and then we decided that we wanted to create a PyDay
+      like other countries have done.
+      <br/>
+      <br/>
+      It was quite a challenge since this would be the first PyDay ever in Colombia, but we didn't step back on it, we paired with the [CaliDev](https://www.calidev.co/)
+      community who has experience running similar events.
+      <br/>
+      <br/>
+      We created the team, defined roles, and started working a lot. In the end, the event was a big success, we had more than 250 attendees, 7 Speakers, food and
+      a great moment with the community.
+      <br/>
+      <br/>
+      Together the amazing designer [Isabella Quintana](https://twitter.com/isaquinva), We recorded all the talks, you can take a look at them
+      [here](https://www.youtube.com/playlist?list=PL8KY_kDWhekfNPN9MRWEpKEp2IgO4_rzn)`
     },
     {
-      "title": "PyCon Colombia 2019",
-      "role": "Co-Organizer",
-      "timePeriod": "2019",
-      "logo": 'assets/images/events/pycon-colombia-2019/logo.png',
+      "title": "Django Girls Cali 2018",
+      "role": "Organizer",
+      "timePeriod": "2018",
+      "logo": 'assets/images/events/django-girls-cali-2018/logo.png',
       "pictures": [
-        'assets/images/events/pycon-colombia-2019/team.jpg',
-        'assets/images/events/pycon-colombia-2019/people.jpg',
+        'assets/images/events/django-girls-cali-2018/foto-grupal.jpg',
+        'assets/images/events/django-girls-cali-2018/workshop.jpg',
+        'assets/images/events/django-girls-cali-2018/me.jpg',
       ],
-      "excerpt": "A-whole-day conference dedicated to Python and its ecosystem",
-      "description": ""
-    }
+      "excerpt": "Django workshop for women who want to have a first approach to tech and coding",
+      "description": `When I attended my first PyCon Colombia in 2018 I met [Johanna Sanchez](https://twitter.com/EllaQuimica), the
+      Chief Organizer for Django Girls Colombia, I talked to her with my college [Isabel Ruiz](https://twitter.com/iris9112) about the
+      possibility of running a Django Girls workshop in Cali, she was excited about it and then we scheduled a meeting to talk about it.
+      <br/>
+      <br/>
+      After that we created a team with the Python Cali Community and worked with the team to organize all the aspects of the event. It required
+      a lot of work and effort, but in the end we had more than 40 attendees very happy to have their first opportunity to learn how to code.
+      <br/>
+      <br/>
+      Here are the [photos of the event](https://argentinaenpython.com/galeria/django-girls-cali/) which I took btw`
+    },
+    {
+      "title": "Python Cali Meetup",
+      "role": "Co-Organizer",
+      "timePeriod": "2017 - Current",
+      "logo": 'assets/images/events/python-cali/logo.png',
+      "pictures": [
+        'assets/images/events/python-cali/group.jpg',
+        'assets/images/events/python-cali/people.jpeg',
+        'assets/images/events/python-cali/speaking.jpg',
+      ],
+      "excerpt": "Local Python group for my city Cali, Colombia",
+      "description": `Python Cali was my first approach to the community, I first started by giving a talk
+      **Introduction to the Pythonista Style** in 2017, since then I started to attend every meetup in the
+      community, give ideas and gather speakers for the meetups until the organizers invited me to be part
+      of the team a few months later.
+      <br/>
+      <br/>
+      I'm still a Co-Organizer for Python Cali, we try to do monthly meetups in which we talk about subjects
+      related to Python, its frameworks and tools, its applications, among others.`
+    },
   ]
 }
