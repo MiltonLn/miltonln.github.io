@@ -286,7 +286,7 @@ export const DATA = {
         "title": "Python & Django",
         "icon": "python",
         "learnedAt": 2015,
-        "description": "The Python ecosystem represents a big part in my professional career, almost any of the projects I've been involved in uses it, like Django, which is my killer tool to work in the backend"
+        "description": "The Python ecosystem represents a big part in my professional career, almost any of the projects I've been involved in uses it, like Django, which is my favorite tool to work in the backend"
       },
       {
         "title": "ReactJS",
@@ -558,5 +558,55 @@ export const DATA = {
       <br/>
       <br/>
       You can take a look at it [here](${BLOG_LINK})`
-  }
+  },
+  "events": [
+    {
+      "title": "Python Cali Meetup",
+      "role": "Co-Organizer",
+      "timePeriod": "2017 - Current",
+      "logo": 'assets/images/events/python-cali/logo.png',
+      "pictures": [
+        'assets/images/events/python-cali/group.jpg',
+      ],
+      "excerpt": "Local Python group for my city Cali, Colombia",
+      "description": ""
+    },
+    {
+      "title": "Django Girls Cali 2018",
+      "role": "Organizer",
+      "timePeriod": "2018",
+      "logo": 'assets/images/events/django-girls-cali-2018/logo.png',
+      "pictures": [
+        'assets/images/events/django-girls-cali-2018/foto-grupal.jpg',
+        'assets/images/events/django-girls-cali-2018/me.jpg',
+      ],
+      "excerpt": "Django workshop for women who want to have a first approach to tech and coding",
+      "description": ""
+    },
+    {
+      "title": "PyDay Cali 2018",
+      "role": "Organizer",
+      "timePeriod": "2018",
+      "logo": 'assets/images/events/pyday-cali-2018/pyday-cali-logo.png',
+      "pictures": [
+        'assets/images/events/pyday-cali-2018/foto-grupal.jpeg',
+        'assets/images/events/pyday-cali-2018/team.jpeg',
+        'assets/images/events/pyday-cali-2018/random-pic.jpeg',
+      ],
+      "excerpt": "A-whole-day conference dedicated to Python and its ecosystem",
+      "description": ""
+    },
+    {
+      "title": "PyCon Colombia 2019",
+      "role": "Co-Organizer",
+      "timePeriod": "2019",
+      "logo": 'assets/images/events/pycon-colombia-2019/logo.png',
+      "pictures": [
+        'assets/images/events/pycon-colombia-2019/team.jpg',
+        'assets/images/events/pycon-colombia-2019/people.jpg',
+      ],
+      "excerpt": "A-whole-day conference dedicated to Python and its ecosystem",
+      "description": ""
+    }
+  ]
 }

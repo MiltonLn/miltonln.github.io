@@ -8,6 +8,7 @@ import { Contact } from './contact'
 import { SocialMedia } from './social-media'
 import { About } from './about'
 import { Talks } from './talks'
+import { Events } from './events'
 import { OpenSource } from './open-source'
 import { Blog } from './blog'
 import { scrollToSection } from '../util'
@@ -42,6 +43,8 @@ export class Header extends Component {
         return <About data={this.props.data}/>
       case 'talks':
         return <Talks data={this.props.data}/>
+      case 'events':
+        return <Events data={this.props.data}/>
       case 'openSource':
         return <OpenSource data={this.props.data}/>
       case 'blog':
@@ -140,6 +143,14 @@ export class Header extends Component {
                      id="talks-selector"
                      href="#talks-section">
                      Talks
+                   </a>
+                </li>
+                <li className="nav-item">
+                  <a onClick={() => this.switchSection('events')}
+                     className="scrollto nav-link"
+                     id="events-selector"
+                     href="#events-section">
+                     Community & Events
                    </a>
                 </li>
                 <li className="nav-item">
