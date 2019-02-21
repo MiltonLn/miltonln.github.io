@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 import { initializeIsotopePlugin } from '../util'
-import { data } from '../data'
 
 
 export class Projects extends Component {
@@ -16,7 +15,7 @@ export class Projects extends Component {
 
         <ul id="filters" className="filters clearfix">
           <li className="type active" data-filter="*">All</li>
-          { data.projects.categories.map(category =>
+          { this.props.data.projects.categories.map(category =>
             <li key={ category } className="type" data-filter={`.${ category }`}>
               { category.replace('-', ' ') }
             </li>
@@ -25,7 +24,7 @@ export class Projects extends Component {
 
         <div className="items-wrapper isotope row">
 
-          { data.projects.projectsList.map(project =>
+          { this.props.data.projects.projectsList.map(project =>
             <div key={ project.title }
                  className={`item col-lg-4 col-12 ${ project.categories }`}>
               <div className="item-inner">
@@ -46,7 +45,7 @@ export class Projects extends Component {
           )}
 
         </div>
-        
+
     </section>
   }
 }
