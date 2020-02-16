@@ -2,7 +2,7 @@
   "name": "miltonln-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://miltonlenis.com",
+  "homepage": "https://miltonln.dev",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "react": "^16.2.0",
