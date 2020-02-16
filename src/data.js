@@ -1,18 +1,19 @@
 const NAME = "Milton Lenis"
-const ROLE = "Full Stack Developer"
+const ROLE = "Senior Backend Developer"
 const EMAIL = "miltonln04@gmail.com"
 const BLOG_LINK = "https://www.lalogiadepython.com"
+const CURRENTLY_BASED = "Cali, Colombia"
 
 export const DATA = {
   "name": NAME,
   "role": ROLE,
   "profile": "I have a big amount of passion about coding, open source, programming communities, soccer and videogames",
-  "bio": `My name is Milton Lenis and I'm a **Full Stack Developer** from **Colombia**, currently based in **Cali, Colombia**
+  "bio": `My name is Milton Lenis and I'm a **${ROLE}** from **Colombia**, currently based in **${CURRENTLY_BASED}**
 
   I'm a life-long learner, always excited to work on the most cutting edge technologies, ready to help and passionated about the things I do on a daily basis.
 
-  I always loved to create things with code since I was a Software Engineering student at Universidad del Valle where I discovered my passion
-  for web development and python in the last years of my degree, in fact, I started my first job as a developer there.
+  I've always loved to create things with code since I was a Software Engineering student at Universidad del Valle where I discovered my passion
+  for web development and python during the last years of my degree, in fact, I started my first job as a developer there.
 
   I've been working in web development on the Python ecosystem since 2015, I've faced several kind of projects, like **e-commerce, social media,
   fintech, Data Visualisation, and Multitenant (SaaS) platforms**.
@@ -20,7 +21,7 @@ export const DATA = {
   I also like to contribute to Open Source projects whenever I can, that's my way to thank the developers who create the cool tools
   I use on a daily basis.
 
-  Another thing I enjoy a lot is to be part of programming communities in which I've organized events like **local meetups, Django Girls Workshops,
+  Another thing I enjoy a lot is to be part of programming communities where I've organized events like **local meetups, Django Girls Workshops,
   PyDays** and our national **PyCon**. Sometimes I also **give some talks**.
 
   When I'm not doing something related to programming I'm usually playing videogames or playing soccer with my friends. I also enjoy a wonderful
@@ -60,12 +61,28 @@ export const DATA = {
   "experience": [
     {
       "workPlace": {
+        "name": "ShipHero",
+        "webPage": "https://shiphero.com/",
+        "ubication": "New York, U.S.A (Remote)"
+      },
+      "role": "Senior Backend Developer",
+      "period": "2019 - Present",
+      "description": "Work with Python/Flask, SQLAlchemy, GraphQL, etc. on a Warehouse Management System",
+      "achievements": [
+        "Migrated the codebase from Python 2 to 3",
+        "Bug-fixing to improve the reliability of the platform",
+        "Proposed and implemented features and small projects inside the company",
+        "Supported Frontend devs with GraphQL Queries and Mutations"
+      ]
+    },
+    {
+      "workPlace": {
         "name": "Monadical",
         "webPage": "https://monadical.com/",
         "ubication": "Medellín, Colombia (Remote)"
       },
       "role": "Full Stack Developer",
-      "period": "2017 - Present",
+      "period": "2017 - 2019",
       "description": "Work with Django and React / Redux on a cool e-sport poker platform for online-gambling using blockchain tech",
       "achievements": [
         "Worked on a marketing tool with web scraping to support company's social media workflows",
@@ -121,6 +138,35 @@ export const DATA = {
       "API"
     ],
     "projectsList": [
+        {
+            "title": "ShipHero Platform",
+            "categories": "backend API",
+            "picture": "assets/images/projects/shiphero.png",
+            "techStack": [
+                "Python / Flask",
+                "GraphQL",
+                "SQLAlchemy",
+                "Microservices",
+            ],
+            "link": {
+                "label": "🔒 Private Project",
+                "url": false
+            }
+        },
+        {
+            "title": "Curaduría",
+            "categories": "backend frontend",
+            "picture": "assets/images/projects/curaduria.png",
+            "techStack": [
+                "Django",
+                "ReactJS",
+                "PostgreSQL",
+            ],
+            "link": {
+                "label": "🔒 Private Project",
+                "url": false
+            }
+        },
       {
         "title": "OddSlingers",
         "categories": "frontend backend API",
@@ -283,32 +329,25 @@ export const DATA = {
   "skills": {
     "main": [
       {
-        "title": "Python & Django",
+        "title": "Python Ecosystem",
         "icon": "python",
         "learnedAt": 2015,
         "description": "The Python ecosystem represents a big part in my professional career, almost any of the projects I've been involved in uses it, like Django, which is my favorite tool to work in the backend"
       },
-      {
-        "title": "ReactJS",
-        "icon": "react",
-        "learnedAt": 2017,
-        "description": "ReactJS is the main tool I use to handle my frontend tasks, I'm currently using it with Redux"
-      }
     ],
     "tech": {
-      "Basics": [
-          "HTML5",
-          "CSS3",
-          "Bootstrap",
-          "Javascript (ES6)"
+      "Frameworks": [
+          "Flask",
+          "Django",
+      ],
+      "APIs": [
+          "Django Rest Framework",
+          "GraphQL (Graphene, Django & Flask)",
+          "Flask APIs"
       ],
       "Scripting": [
           "Bash",
           "Python CLI"
-      ],
-      "APIs": [
-          "Django Rest Framework",
-          "GraphQL (Graphene and Apollo Client)"
       ],
       "Async Web": [
           "WebSockets",
@@ -324,7 +363,16 @@ export const DATA = {
       ],
       "Databases": [
           "PostgreSQL",
+          "MySQL",
           "SQLite"
+      ],
+      "ORMs": [
+          "SQLAlchemy",
+          "Django ORM",
+      ],
+      "DevOps": [
+          "AWS",
+          "Docker",
       ],
       "Web Scraping": [
           "BeautifulSoup4",
@@ -346,7 +394,8 @@ export const DATA = {
           "reStructuredText"
       ],
       "Misc": [
-          "Multitenant Architectures & SaaS"
+          "Multitenant Architectures & SaaS",
+          "Microservices",
       ],
       "OS": [
           "Linux (Ubuntu)",
@@ -381,6 +430,17 @@ export const DATA = {
     ]
   },
   "talks": [
+    {
+      "title": "Interview - Russel Keith-Magee",
+      "event": "PyCon Colombia 2019",
+      "year": "2019",
+      "link": "https://www.youtube.com/watch?v=wSa28y7Z5Iw",
+      "picture": "https://www.youtube.com/embed/wSa28y7Z5Iw",
+      "excerpt": "Interview with Russel Keith-Magee, one of the Keynote Speakers for PyCon Colombia 2019",
+      "description": `As part of the organizing team for this event, I had the wonderful opportunity to interview
+       Russel Keith-Magee, one of the most important contributors for Django and Python in general.
+      `
+    },
     {
       "title": "Multitenant Architectures in Python",
       "event": "PyCon Colombia 2018",
@@ -536,8 +596,7 @@ export const DATA = {
   **I can help with the following:**
 
   <ul class="list-unstyled service-list">
-    <li><i class="fa fa-check" aria-hidden="true"></i> Front-end development with ReactJS</li>
-    <li><i class="fa fa-check" aria-hidden="true"></i> Back-end development with Python/Django</li>
+    <li><i class="fa fa-check" aria-hidden="true"></i> Back-end development with Python/Django/Flask</li>
     <li><i class="fa fa-check" aria-hidden="true"></i> Async web development with Django Channels</li>
     <li><i class="fa fa-check" aria-hidden="true"></i> API crafting and maintenance with Django Rest Framework and GraphQL</li>
     <li><i class="fa fa-check" aria-hidden="true"></i> Content oriented sites building with Wagtail</li>
@@ -560,6 +619,35 @@ export const DATA = {
       You can take a look at it [here](${BLOG_LINK})`
   },
   "events": [
+    {
+      "title": "PyCon Colombia 2020",
+      "role": "Co-Organizer",
+      "timePeriod": "2020",
+      "logo": 'assets/images/events/pycon-colombia-2020/logo.png',
+      "pictures": [
+        'assets/images/events/pycon-colombia-2020/random.jpg',
+        'assets/images/events/pycon-colombia-2020/andrew.jpg',
+      ],
+      "excerpt": "The biggest and most important Python Conference in Colombia",
+      "description": `Continuing with the work developed in my first participation as Co-Organizer for **PyCon Colombia 2019**
+      I was back again as part of the team. I was still part of the speakers team trying to bring more quality to the event's talks
+      and workshops`
+    },
+    {
+      "title": "PyDay Pereira 2019",
+      "role": "Co-Organizer",
+      "timePeriod": "2019",
+      "logo": 'assets/images/events/pyday-pereira-2019/logo.svg',
+      "pictures": [
+        'assets/images/events/pyday-pereira-2019/me.jpg',
+        'assets/images/events/pyday-pereira-2019/random.jpg',
+        'assets/images/events/pyday-pereira-2019/people.jpg',
+      ],
+      "excerpt": "A-whole-day conference dedicated to Python and its ecosystem, second one ever in Colombia",
+      "description": `Since **PyDay Cali 2018** was a success we decided to take the format to a new city, together with
+       our friends from Pereira, we created PyDay Pereira 2019 and it was a success!
+      `
+    },
     {
       "title": "PyCon Colombia 2019",
       "role": "Co-Organizer",

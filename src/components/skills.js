@@ -18,7 +18,7 @@ export class Skills extends Component {
           <div className="row">
 
             { this.props.data.skills.main.map(skill =>
-              <div key={ skill.title } className="item col-12 col-md-6">
+              <div key={ skill.title } className="item col-12 col-md-12">
                 <div className="item-inner">
                   <div className="skill-icon">
                     <i className={ 'fab fa-' + skill.icon }></i>
