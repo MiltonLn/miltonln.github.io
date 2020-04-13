@@ -1,7 +1,7 @@
 const NAME = "Milton Lenis"
 const ROLE = "Senior Backend Developer"
 const EMAIL = "miltonln04@gmail.com"
-const BLOG_LINK = "https://www.lalogiadepython.com"
+const BLOG_LINK = "https://www.thepythonic.com"
 const CURRENTLY_BASED = "Cali, Colombia"
 
 export const DATA = {
@@ -343,23 +343,11 @@ export const DATA = {
       "APIs": [
           "Django Rest Framework",
           "GraphQL (Graphene, Django & Flask)",
-          "Flask APIs"
-      ],
-      "Scripting": [
-          "Bash",
-          "Python CLI"
+          "Flask REST"
       ],
       "Async Web": [
           "WebSockets",
           "Django Channels"
-      ],
-      "CMS": [
-          "Wagtail"
-      ],
-      "Testing": [
-          "unittest",
-          "PyTest",
-          "Jest"
       ],
       "Databases": [
           "PostgreSQL",
@@ -369,6 +357,20 @@ export const DATA = {
       "ORMs": [
           "SQLAlchemy",
           "Django ORM",
+      ],
+      "CMS": [
+          "Wagtail"
+      ],
+      "Testing": [
+          "unittest",
+          "PyTest",
+          "Mocking",
+          "Monkey Patching"
+      ],
+      "Scripting": [
+          "Bash",
+          "Python CLI",
+          "Click"
       ],
       "DevOps": [
           "AWS",
@@ -431,11 +433,37 @@ export const DATA = {
   },
   "talks": [
     {
-      "title": "Interview - Russel Keith-Magee",
+      "title": "Debugging - A Senior's Skill 📹",
+      "event": "PyCon Colombia 2020",
+      "year": "2020",
+      "link": "https://www.youtube.com/watch?v=x8cXLG6zB-Q",
+      "picture": "https://www.youtube.com/embed/x8cXLG6zB-Q",
+      "language": "English",
+      "excerpt": "Talk about the importance of becoming good at debugging code, and a brief intro to ipdb",
+      "description": `Debugging is maybe one of the most important skills to become a good problem solver, however, this
+      skill is pretty underrated in our industry, my intention with this talk was to give people a call to action to become
+      better debuggers.
+      `
+    },
+    {
+      "title": "Interview - Andrew Godwin 📹",
+      "event": "PyCon Colombia 2020",
+      "year": "2020",
+      "link": "https://www.youtube.com/watch?v=0ZNMZdFk_WY",
+      "picture": "https://www.youtube.com/embed/0ZNMZdFk_WY",
+      "language": "English",
+      "excerpt": "Interview with Andrew Godwin, one of the Keynote Speakers for PyCon Colombia 2020",
+      "description": `Andrew is one of the core developers of Django Project and the creator of Django Channels, a
+       project that I've personally used a lot to build projects using websockets and async.
+      `
+    },
+    {
+      "title": "Interview - Russel Keith-Magee 📹",
       "event": "PyCon Colombia 2019",
       "year": "2019",
       "link": "https://www.youtube.com/watch?v=wSa28y7Z5Iw",
       "picture": "https://www.youtube.com/embed/wSa28y7Z5Iw",
+      "language": "English",
       "excerpt": "Interview with Russel Keith-Magee, one of the Keynote Speakers for PyCon Colombia 2019",
       "description": `As part of the organizing team for this event, I had the wonderful opportunity to interview
        Russel Keith-Magee, one of the most important contributors for Django and Python in general.
@@ -447,6 +475,7 @@ export const DATA = {
       "year": "2018",
       "link": "https://2018.pycon.co/talks/multitenant-architectures-in-python/",
       "picture": "assets/images/talks/multitenant.jpg",
+      "language": "Spanish",
       "excerpt": "Talk about what multitenant architectures are, what types exist, how to implement one with Django and Postgresql, my experiences implementing this type of architecture and practical advice on this subject in general.",
       "description": `PyCon Colombia is the biggest and most important Python event in Colombia, since I knew about it, it became like a dream
       to talk in an event of such magnitude, when CFPs for PyCon Colombia 2018 were open, I didn't hesitate to sent my proposal, I decided to
@@ -607,10 +636,10 @@ export const DATA = {
   Drop me a line at [${EMAIL}](mailto:${EMAIL})
   `,
   "blog": {
-      "name": "La Logia de Python",
+      "name": "The Pythonic",
       "link": BLOG_LINK,
       "logo": "assets/images/logo-logia.png",
-      "description": `I have a blog called **"La Logia de Python"** in which I try to
+      "description": `I have a blog called **"The Pythonic"** in which I try to
       write about the things I learn, the things I figure out about the tools I use
       or about some random thoughts I usually have, you can expect mostly Python content from it written
       sometimes in English, sometimes in Spanish.

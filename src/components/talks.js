@@ -12,7 +12,7 @@ export class Talks extends Component {
       </h2>
 
       { this.props.data.talks.map(talk => {
-          const snakeCaseTitle = talk.title.split(' ').join('-')
+          const snakeCaseTitle = talk.title.replace(/\W/g, '')
 
           return <span key={snakeCaseTitle}>
             <a href="#"
