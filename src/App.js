@@ -8,15 +8,13 @@ import { DATA } from './data'
 import './App.css'
 
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header data={DATA}/>
-        <Footer data={DATA}/>
-      </div>
-    )
-  }
+function App() {
+  return (
+    <div className="App">
+      <Header data={DATA}/>
+      <Footer data={DATA}/>
+    </div>
+  );
 }
 
 export default App

@@ -7,7 +7,7 @@ const CURRENTLY_BASED = "Cali, Colombia"
 export const DATA = {
   "name": NAME,
   "role": ROLE,
-  "profile": "I have a big amount of passion about coding, open source, programming communities, soccer and videogames",
+  "profile": "I have a big amount of passion about coding, open source, programming communities, soccer and cooking",
   "bio": `My name is Milton Lenis and I'm a **${ROLE}** from **Colombia**, currently based in **${CURRENTLY_BASED}**
 
   I'm a life-long learner, always excited to work on the most cutting edge technologies, ready to help and passionated about the things I do on a daily basis.
@@ -16,7 +16,7 @@ export const DATA = {
   for web development and python during the last years of my degree, in fact, I started my first job as a developer there.
 
   I've been working in web development on the Python ecosystem since 2015, I've faced several kind of projects, like **e-commerce, social media,
-  fintech, Data Visualisation, and Multitenant (SaaS) platforms**.
+  fintech, Data Visualisation, Video Games and Multitenant (SaaS) platforms**.
 
   I also like to contribute to Open Source projects whenever I can, that's my way to thank the developers who create the cool tools
   I use on a daily basis.
@@ -24,8 +24,7 @@ export const DATA = {
   Another thing I enjoy a lot is to be part of programming communities where I've organized events like **local meetups, Django Girls Workshops,
   PyDays** and our national **PyCon**. Sometimes I also **give some talks**.
 
-  When I'm not doing something related to programming I'm usually playing videogames or playing soccer with my friends. I also enjoy a wonderful
-  life with my wife and our little dog Chili.
+  When I'm not doing something related to programming I'm usually playing videogames, riding my bike, watching soccer games or cooking a meal.
 
   Welcome to my page and please don't hesitate on checking every section you want to dig deeper about me, if you have any question feel free to
   contact me.`,
@@ -55,10 +54,23 @@ export const DATA = {
     {
       "name": "Blog",
       "icon": "far fa-file-alt",
-      "link": "https://www.lalogiadepython.com"
+      "link": "https://www.thepythonic.com"
     }
   ],
   "experience": [
+    {
+      "workPlace": {
+        "name": "Monadical",
+        "webPage": "https://monadical.com/",
+        "ubication": "New York, U.S.A (Remote)"
+      },
+      "role": "Lead Developer",
+      "period": "2022 - Present",
+      "description": "Work with Django, React, Channels, PostgreSQL, Redis, Dramatiq, etc. on a Poker Platform",
+      "achievements": [
+        "Fill This!"
+      ]
+    },
     {
       "workPlace": {
         "name": "ShipHero",
@@ -66,9 +78,11 @@ export const DATA = {
         "ubication": "New York, U.S.A (Remote)"
       },
       "role": "Senior Backend Developer",
-      "period": "2019 - Present",
+      "period": "2019 - 2022",
       "description": "Work with Python/Flask, SQLAlchemy, GraphQL, etc. on a Warehouse Management System",
       "achievements": [
+        "Created solutions that scale to fetch millions of records from the DB in a performant way",
+        "Created a reusable way to create automation rules in a way that was easy to understand for future devs",
         "Migrated the codebase from Python 2 to 3",
         "Bug-fixing to improve the reliability of the platform",
         "Proposed and implemented features and small projects inside the company",
@@ -272,7 +286,7 @@ export const DATA = {
         }
       },
       {
-        "title": "La Logia de Python (Blog)",
+        "title": "The Pythonic (Blog)",
         "categories": "backend frontend",
         "picture": "assets/images/projects/lalogia.png",
         "techStack": [
@@ -282,19 +296,7 @@ export const DATA = {
         ],
         "link": {
           "label": "View Page",
-          "url": "https://www.lalogiadepython.com"
-        }
-      },
-      {
-        "title": "Milton Lenis WebPage",
-        "categories": "frontend",
-        "picture": "assets/images/projects/webpage.png",
-        "techStack": [
-          "ReactJS"
-        ],
-        "link": {
-          "label": "View Page",
-          "url": "https://www.miltonlenis.com"
+          "url": "https://www.thepythonic.com"
         }
       },
       {
@@ -501,7 +503,7 @@ export const DATA = {
       example of its cappabilities.
       <br/>
       <br/>
-      I also wrote [this spanish blog post](https://www.lalogiadepython.com/2018/03/01/como-traducir-un-sitio-web-con-django/) about the topic.`
+      I also wrote [this spanish blog post](https://www.thepythonic.com/2018/03/01/como-traducir-un-sitio-web-con-django/) about the topic.`
     },
     {
       "title": "Unittesting step by step",
@@ -607,7 +609,7 @@ export const DATA = {
       "link": "https://github.com/FlipperPA/wagtailmarkdownblock",
       "stars": 10,
       "excerpt": "Wagtail Markdown Block provides Markdown editing and display blocks in Wagtail",
-      "description": `When I was developing [my blog](https://www.lalogiadepython.com/) using [Puput](https://github.com/APSL/puput)
+      "description": `When I was developing [my blog](https://www.thepythonic.com/) using [Puput](https://github.com/APSL/puput)
       I wanted to use Markdown as the markup language for my content, since Wagtail didn't provided built-in support for Markdown
       I found this project but it lacked a lot of features and it was pretty immature.
       <br/>
@@ -643,8 +645,6 @@ export const DATA = {
       write about the things I learn, the things I figure out about the tools I use
       or about some random thoughts I usually have, you can expect mostly Python content from it written
       sometimes in English, sometimes in Spanish.
-      <br/>
-      <br/>
       You can take a look at it [here](${BLOG_LINK})`
   },
   "events": [

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import ReactMarkdown from 'react-markdown'
+import Markdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
 
 
 export class Talks extends Component {
@@ -77,9 +78,7 @@ export class Talks extends Component {
                     <p><b>Language:</b> {talk.language}</p>
 
                     <p><b>Detailed Description:</b></p>
-                    <ReactMarkdown
-                      source={talk.description}
-                      escapeHtml={false} />
+                    <Markdown rehypePlugins={[rehypeRaw]}>{talk.description}</Markdown>
                   </div>
                   <div className="modal-footer">
                     <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ReactMarkdown from 'react-markdown'
+import Markdown from 'react-markdown'
 
 
 export class About extends Component {
@@ -14,9 +14,7 @@ export class About extends Component {
           <div className="dialog">
             <h3 className="subtitle">¡Hello everybody!</h3>
             <br/>
-            <ReactMarkdown
-              source={this.props.data.bio}
-              escapeHtml={false} />
+            <Markdown>{this.props.data.bio}</Markdown>
 
           </div>
         </div>

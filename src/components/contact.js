@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import ReactMarkdown from 'react-markdown'
+import Markdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
 
 import { SocialMedia } from './social-media'
 
@@ -13,9 +14,7 @@ export class Contact extends Component {
         <div className="intro">
           <img className="profile-image" src={ this.props.data.picture } alt=""/>
           <div className="dialog">
-            <ReactMarkdown
-              source={this.props.data.contactContent}
-              escapeHtml={false}/>
+            <Markdown rehypePlugins={[rehypeRaw]}>{this.props.data.contactContent}</Markdown>
 
             <SocialMedia data={this.props.data}/>
           </div>

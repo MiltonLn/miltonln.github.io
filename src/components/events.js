@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import ReactMarkdown from 'react-markdown'
+import Markdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
 
 import { PicturesCarousel } from './carousel'
 
@@ -73,9 +74,7 @@ export class Events extends Component {
                     <p><b>Year:</b> {event.timePeriod}</p>
 
                     <p><b>Detailed Description:</b></p>
-                    <ReactMarkdown
-                      source={event.description}
-                      escapeHtml={false} />
+                    <Markdown rehypePlugins={[rehypeRaw]}>{event.description}</Markdown>
                   </div>
                   <div className="modal-footer">
                     <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>

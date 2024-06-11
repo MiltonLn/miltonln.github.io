@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ReactMarkdown from 'react-markdown'
+import Markdown from 'react-markdown'
 
 
 export class Blog extends Component {
@@ -19,9 +19,7 @@ export class Blog extends Component {
                         </h3>
                         <br/>
                         <div className="dialog">
-                            <ReactMarkdown
-                                source={this.props.data.blog.description}
-                                escapeHtml={false} />
+                            <Markdown>{this.props.data.blog.description}</Markdown>
                         </div>
                     </div>
                 </div>

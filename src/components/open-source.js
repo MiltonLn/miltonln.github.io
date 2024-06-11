@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import ReactMarkdown from 'react-markdown'
+import Markdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
 
 
 export class OpenSource extends Component {
@@ -79,9 +80,7 @@ export class OpenSource extends Component {
                                     </p>
 
                                     <p><b>Detailed Description:</b></p>
-                                    <ReactMarkdown
-                                        source={ project.description }
-                                        escapeHtml={false} />
+                                    <Markdown rehypePlugins={[rehypeRaw]}>{ project.description }</Markdown>
                                 </div>
                                 <div className="modal-footer">
                                     <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
