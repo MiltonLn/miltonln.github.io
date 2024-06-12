@@ -68,7 +68,12 @@ export const DATA = {
       "period": "2022 - Present",
       "description": "Work with Django, React, Channels, PostgreSQL, Redis, Dramatiq, etc. on a Poker Platform",
       "achievements": [
-        "Fill This!"
+        "Lead a team of 5 developers to build a Poker Platform",
+        "Implemented the whole backend architecture to support Multi Table Tournaments",
+        "Optimized the performance of the game",
+        "Worked together with customer to manage the project's roadmap",
+        "Mentored developers on the team to increase the productivity",
+        "Created abstractions that helped to reduce the complexity of the codebase"
       ]
     },
     {
