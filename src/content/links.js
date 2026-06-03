@@ -1,8 +1,9 @@
 // Contact + outbound links. One place to update everything.
 export const email = 'miltonln04@gmail.com'
 
-// Local file. To update your CV, drop a new file at public/cv.pdf (same name) and redeploy.
-export const cvUrl = '/cv.pdf'
+// Resume page (print to PDF from browser for a clean export).
+// To replace, edit public/resume.html and redeploy.
+export const cvUrl = '/resume.html'
 
 export const socials = [
   { label: 'GitHub', href: 'https://github.com/MiltonLn' },

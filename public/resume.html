@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Milton Lenis — Resume</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.5;
+      color: #1a1a1a;
+      background: #fff;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 52px;
+    }
+
+    /* ---------- HEADER ---------- */
+    .header { margin-bottom: 16px; }
+    .name {
+      font-size: 22pt;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+    .tagline {
+      font-size: 10.5pt;
+      color: #555;
+      margin-top: 2px;
+    }
+    .contact {
+      margin-top: 6px;
+      font-size: 9.5pt;
+      color: #444;
+    }
+    .contact a { color: #444; text-decoration: none; }
+    .contact span { margin: 0 5px; color: #bbb; }
+
+    /* ---------- CORE COMPETENCIES ---------- */
+    .competencies {
+      margin-top: 10px;
+      font-size: 9pt;
+      color: #333;
+      line-height: 1.6;
+    }
+    .competencies strong {
+      font-weight: 700;
+      font-size: 8.5pt;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #1a1a1a;
+      margin-right: 6px;
+    }
+
+    /* ---------- SECTION ---------- */
+    section { margin-top: 16px; }
+    h2 {
+      font-size: 9pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #1a1a1a;
+      border-bottom: 1.5px solid #1a1a1a;
+      padding-bottom: 3px;
+      margin-bottom: 10px;
+    }
+
+    /* ---------- SUMMARY ---------- */
+    .summary p { color: #222; }
+
+    /* ---------- EXPERIENCE ---------- */
+    .job { margin-bottom: 13px; }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .job-title {
+      font-weight: 700;
+      font-size: 10.5pt;
+    }
+    .job-org { font-weight: 400; }
+    .job-meta {
+      font-size: 9.5pt;
+      color: #555;
+      white-space: nowrap;
+    }
+    .job ul {
+      margin-top: 5px;
+      padding-left: 16px;
+    }
+    .job li {
+      margin-bottom: 3px;
+      padding-left: 2px;
+    }
+
+    /* ---------- PROJECTS ---------- */
+    .projects-list { list-style: none; padding: 0; }
+    .projects-list li {
+      margin-bottom: 7px;
+      padding-left: 0;
+    }
+    .project-name { font-weight: 700; }
+
+    /* ---------- SKILLS ---------- */
+    .skills-grid { display: grid; gap: 4px; }
+    .skill-row { display: flex; gap: 6px; }
+    .skill-label {
+      font-weight: 700;
+      white-space: nowrap;
+      min-width: 88px;
+      font-size: 10pt;
+    }
+    .skill-items { color: #333; }
+
+    /* ---------- EDUCATION ---------- */
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+    .edu-degree { font-weight: 700; }
+    .edu-meta { font-size: 9.5pt; color: #555; }
+    .edu-note { margin-top: 2px; color: #444; }
+
+    /* ---------- COMMUNITY ---------- */
+    .community-list { list-style: none; padding: 0; }
+    .community-list li { margin-bottom: 3px; }
+    .community-list li::before { content: "·  "; color: #999; }
+
+    /* ---------- PRINT ---------- */
+    @media print {
+      body {
+        padding: 0.5in 0.62in;
+        max-width: 100%;
+        font-size: 10pt;
+      }
+      a { color: #1a1a1a; }
+      @page {
+        size: letter;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="name">Milton Lenis</div>
+    <div class="tagline">Senior Software Engineer &nbsp;·&nbsp; Python &nbsp;·&nbsp; Backend Systems &nbsp;·&nbsp; AI Integration</div>
+    <div class="contact">
+      miltonln04@gmail.com
+      <span>|</span>
+      <a href="https://miltonln.dev">miltonln.dev</a>
+      <span>|</span>
+      <a href="https://github.com/MiltonLn">github.com/MiltonLn</a>
+      <span>|</span>
+      <a href="https://linkedin.com/in/miltonln">linkedin.com/in/miltonln</a>
+      <span>|</span>
+      Cali, Colombia &nbsp;(open to remote)
+    </div>
+    <!-- Core competencies — ATS keyword block -->
+    <div class="competencies">
+      <strong>Core competencies:</strong>
+      Python · Django · FastAPI · PostgreSQL · Redis · GraphQL · WebSockets ·
+      LLM Integration · RAG Pipelines · Agent Workflows · LangChain · Vertex AI ·
+      System Design · Technical Leadership · Distributed Teams · Fintech · Full-Stack
+    </div>
+  </header>
+
+  <!-- SUMMARY -->
+  <section class="summary">
+    <h2>Professional Summary</h2>
+    <p>
+      Senior software engineer with 10 years of Python backend work, most of it as the technical lead on small product teams. Built and shipped systems across fintech, gaming, and government sectors — real-time transaction engines, data platforms processing millions of records, and LLM-powered automation pipelines. Comfortable being the sole or first backend engineer on a project: have taken systems from blank repository to production multiple times without a team to catch the gaps. Over the last two years, integrating AI tooling into engineering has cut multi-hour manual workflows to minutes and shipped production agent pipelines in client products. Looking for senior, product, or founding engineer roles where owning the backend architecture is the job.
+    </p>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section>
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Senior Engineer &amp; Tech Lead &nbsp;<span class="job-org">· Monadical</span></span>
+        <span class="job-meta">Remote &nbsp;·&nbsp; 2022 – 2026</span>
+      </div>
+      <ul>
+        <li>Owned technical delivery for a 5-person distributed team across simultaneous client engagements in gaming, fintech, and government — sole decision-maker on architecture, technical scoping, and client-facing technical communication.</li>
+        <li>Integrated LLM APIs (OpenAI, Anthropic) and semantic embeddings into production features and internal tooling, cutting workflows that previously took 3–4 hours of manual work down to under 5 minutes and removing human-in-the-loop steps from routine processes.</li>
+        <li>Shipped production AI agent pipelines that run unsupervised, replacing manual review steps in client business workflows.</li>
+        <li>Designed and built the full backend for Virtue Poker, a real-time poker platform: multi-table tournament engine, WebSocket-driven concurrent game state across live sessions, and a banking layer rebuilt to prevent race conditions at the database level.</li>
+        <li>Delivered SpudPay end-to-end — a full-stack stablecoin payments platform for agricultural businesses — integrating Brale's Treasury API for on-chain operations and Coinflow for ACH and card processing, from data model to production.</li>
+        <li>Built a multimodal search tool using Vertex AI embeddings that semantically matched marketing briefs against image libraries, replacing a manual curation process and returning ranked results in under 2 seconds.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Senior Backend Developer &nbsp;<span class="job-org">· ShipHero</span></span>
+        <span class="job-meta">Remote &nbsp;·&nbsp; 2019 – 2022</span>
+      </div>
+      <ul>
+        <li>Designed query patterns and Redis caching strategies for a warehouse management system processing millions of records daily, keeping p95 API response times stable under peak load.</li>
+        <li>Built an automation-rules engine that let non-technical users configure complex business logic without engineering involvement — adopted across the platform and later cited as one of the most maintainable subsystems in the codebase.</li>
+        <li>Executed a Python 2 to 3 migration across the entire production codebase, coordinating across teams with zero service disruption.</li>
+        <li>Owned the GraphQL API layer shared by multiple frontend teams, extending it with new types and resolvers to unblock product work without breaking existing consumers.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Full Stack Developer &nbsp;<span class="job-org">· Monadical</span></span>
+        <span class="job-meta">Remote &nbsp;·&nbsp; 2017 – 2019</span>
+      </div>
+      <ul>
+        <li>Eliminated the leading source of production incidents on a real-money poker platform by redesigning the banking layer with a data-oriented concurrency model, removing race conditions from financial transactions.</li>
+        <li>Built Django and React/Redux features across a blockchain-based platform with real-money transactions and real-time multiplayer gameplay.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Lead Web Developer &nbsp;<span class="job-org">· RADY Consultores</span></span>
+        <span class="job-meta">Cali, Colombia &nbsp;·&nbsp; 2015 – 2017</span>
+      </div>
+      <ul>
+        <li>Introduced unit testing, CI pipelines, and structured code review to a team that had none — reduced regressions; practices stayed in place after I left.</li>
+        <li>Owned technical scoping and estimation across multiple concurrent Django client projects.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SELECTED PROJECTS -->
+  <section>
+    <h2>Selected Projects</h2>
+    <ul class="projects-list">
+      <li>
+        <span class="project-name">Recidiviz — criminal justice platform used by U.S. state governments</span> —
+        Built the reentry backend: a FastAPI + LangChain service that generates LLM-powered first-draft action plans for caseworkers from real-time intake sessions, audio transcription, and BigQuery client data.
+      </li>
+      <li>
+        <span class="project-name">SimplyPut — URL security scanner</span> —
+        Hexagonal architecture; parallel threat checks (VirusTotal, Google Web Risk, WHOIS, AI-powered intent analysis) streamed to clients via SSE. Stack: FastAPI, PostgreSQL, Redis, Celery.
+      </li>
+      <li>
+        <span class="project-name">Pikeways — real-time multiplayer card game</span> —
+        Designed and built the game engine from scratch: turn-based state machines, action validation, timeout handling, reconnection, and an AI opponent. Stack: NestJS, Next.js, WebSockets, PostgreSQL.
+      </li>
+      <li>
+        <span class="project-name">Puput — open-source Django blog engine</span> —
+        Main maintainer. Kept compatibility with new Django and Wagtail releases; 320+ GitHub stars.
+      </li>
+    </ul>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-row">
+        <span class="skill-label">AI &amp; ML</span>
+        <span class="skill-items">LangChain, OpenAI API, Anthropic API, Vertex AI, Embeddings, RAG pipelines, Agent workflows, Cursor</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Backend</span>
+        <span class="skill-items">Python, Django, Flask, FastAPI, NestJS, GraphQL, WebSockets, REST, Server-Sent Events</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Data</span>
+        <span class="skill-items">PostgreSQL, Redis, SQLAlchemy, BigQuery, Celery</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Frontend</span>
+        <span class="skill-items">React, TypeScript, Next.js, tRPC</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Infrastructure</span>
+        <span class="skill-items">Docker, AWS, Google Cloud, CI/CD, Railway</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <h2>Education</h2>
+    <div class="edu-header">
+      <span class="edu-degree">B.S. Software Engineering &nbsp;·&nbsp; Universidad del Valle</span>
+      <span class="edu-meta">Cali, Colombia &nbsp;·&nbsp; 2011 – 2016</span>
+    </div>
+    <div class="edu-note">
+      Graduated top of class (GPA 4.22 / 5.0), six academic distinctions. Thesis on multitenant Django architecture received a meritorious mention.
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section>
+    <h2>Community &amp; Speaking</h2>
+    <ul class="community-list">
+      <li>Co-organizer, PyCon Colombia 2019 &amp; 2020 — led the talks and workshops selection track</li>
+      <li>Organizer, PyDay Cali 2018 — first PyDay in Colombia, 250+ attendees</li>
+      <li>Organizer, Django Girls Cali 2018 — first coding workshop for women in the city, 40+ participants</li>
+      <li>Speaker, PyCon Colombia 2018 — "Multitenant Architectures in Python"</li>
+      <li>Speaker, PyCon Colombia 2020 — "Debugging: A Senior's Skill"</li>
+    </ul>
+  </section>
+
+</body>
+</html>
