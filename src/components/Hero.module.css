@@ -1,11 +1,24 @@
 .hero {
   padding-block: clamp(3rem, 6vw, 6rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, var(--line) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+  pointer-events: none;
 }
 
 .grid {
   display: grid;
   gap: var(--space-l);
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 @media (min-width: 720px) {

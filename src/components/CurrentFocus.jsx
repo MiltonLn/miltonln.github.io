@@ -5,7 +5,7 @@ import styles from './CurrentFocus.module.css'
 export default function CurrentFocus() {
   const reveal = useReveal()
   return (
-    <section id="focus" className="section" aria-labelledby="focus-title">
+    <section id="focus" className="section section-tinted" aria-labelledby="focus-title">
       <div className="container">
         <div ref={reveal.ref} className={reveal.className}>
           <p className="eyebrow">Right now</p>

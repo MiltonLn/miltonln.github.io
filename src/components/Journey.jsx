@@ -5,7 +5,7 @@ import styles from './Journey.module.css'
 export default function Journey() {
   const reveal = useReveal()
   return (
-    <section id="journey" className="section" aria-labelledby="journey-title">
+    <section id="journey" className="section section-tinted" aria-labelledby="journey-title">
       <div className="container">
         <div ref={reveal.ref} className={reveal.className}>
           <p className="eyebrow">Professional journey</p>

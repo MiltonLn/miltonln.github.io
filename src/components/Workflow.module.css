@@ -14,8 +14,17 @@
 .item {
   padding: var(--space-m);
   border: 1px solid var(--line);
+  border-top: 2px solid var(--accent);
   border-radius: var(--radius);
   background: var(--surface);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px color-mix(in srgb, var(--ink) 8%, transparent);
+  }
 }
 
 .term {

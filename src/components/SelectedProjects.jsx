@@ -14,8 +14,9 @@ export default function SelectedProjects() {
           </h2>
         </div>
         <ul className={styles.list}>
-          {projects.map((p) => (
+          {projects.map((p, i) => (
             <li key={p.title} className={styles.item}>
+              <span className={styles.num} aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
               <div className={styles.header}>
                 <h3 className={styles.title}>{p.title}</h3>
                 {p.link ? (

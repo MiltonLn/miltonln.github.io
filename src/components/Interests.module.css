@@ -21,6 +21,21 @@
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .item:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+}
+
+.icon {
+  display: block;
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: var(--space-s);
 }
 
 .term {

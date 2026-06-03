@@ -16,6 +16,7 @@ export default function Interests() {
         <dl className={styles.grid}>
           {interests.items.map((item) => (
             <div key={item.title} className={styles.item}>
+              {item.icon && <span className={styles.icon} aria-hidden="true">{item.icon}</span>}
               <dt className={styles.term}>{item.title}</dt>
               <dd className={styles.desc}>{item.text}</dd>
             </div>
