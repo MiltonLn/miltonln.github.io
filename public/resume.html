@@ -169,9 +169,9 @@
     <!-- Core competencies — ATS keyword block -->
     <div class="competencies">
       <strong>Core competencies:</strong>
-      Python · Django · FastAPI · PostgreSQL · Redis · GraphQL · WebSockets ·
+      Python · Django · FastAPI · PostgreSQL · Redis · GraphQL · WebSockets · Async ·
       LLM Integration · RAG Pipelines · Agent Workflows · LangChain · Vertex AI ·
-      System Design · Technical Leadership · Distributed Teams · Fintech · Full-Stack
+      System Design · API Design · Technical Leadership · Distributed Systems · Fintech
     </div>
   </header>
 
@@ -179,7 +179,7 @@
   <section class="summary">
     <h2>Professional Summary</h2>
     <p>
-      Senior software engineer with 10 years building products and backend systems across fintech, gaming, government, and AI-enabled applications, mostly as the technical lead on small teams. I have worked directly with clients throughout my career — scoping projects, managing technical expectations, and making product decisions that affected real businesses. Comfortable being the sole or first backend engineer on a project: have taken systems from blank repository to production multiple times without a team to catch the gaps. Over the last two years, integrating AI tooling into engineering has cut multi-hour manual workflows to minutes and shipped production agent pipelines in client products. Most effective in senior, product, and founding engineer roles where I can own the architecture, work closely with stakeholders, and help turn ambiguous ideas into shipped products.
+      Senior software engineer with 10 years building and leading backend systems across fintech, gaming, and government — real-time transaction engines, LLM-powered automation pipelines, and data platforms handling millions of records. Led engineering directly: scoped projects with clients, made architecture calls without a committee, and taken full systems from blank repo to production as the sole backend engineer. Over the last two years, integrating AI tooling into production has reduced multi-hour manual workflows to minutes and shipped unsupervised agent pipelines in client products. Most effective in senior and product engineering roles where I own the architecture and work closely with the people the product is for.
     </p>
   </section>
 
@@ -193,9 +193,9 @@
         <span class="job-meta">Remote &nbsp;·&nbsp; 2022 – 2026</span>
       </div>
       <ul>
-        <li>Owned technical delivery for a 5-person distributed team across simultaneous client engagements in gaming, fintech, and government — sole decision-maker on architecture, technical scoping, and client-facing technical communication.</li>
+        <li>Led a 5-person distributed team across simultaneous client engagements in gaming, fintech, and government — owned architecture decisions, API design, technical scoping, and direct client communication; mentored junior engineers through code review and pair programming.</li>
         <li>Integrated LLM APIs (OpenAI, Anthropic) and semantic embeddings into production features and internal tooling, cutting workflows that previously took 3–4 hours of manual work down to under 5 minutes and removing human-in-the-loop steps from routine processes.</li>
-        <li>Shipped production AI agent pipelines that run unsupervised, replacing manual review steps in client business workflows.</li>
+        <li>Built the AI-powered reentry backend for Recidiviz: a FastAPI + LangChain async service that generates first-draft action plans for caseworkers by processing real-time intake transcripts, audio via Speech-to-Text, and client history from BigQuery — reducing a multi-hour manual review process to an automated draft in under a minute.</li>
         <li>Designed and built the full backend for Virtue Poker, a real-time poker platform: multi-table tournament engine, WebSocket-driven concurrent game state across live sessions, and a banking layer rebuilt to prevent race conditions at the database level.</li>
         <li>Delivered SpudPay end-to-end — a full-stack stablecoin payments platform for agricultural businesses — integrating Brale's Treasury API for on-chain operations and Coinflow for ACH and card processing, from data model to production.</li>
         <li>Built a multimodal search tool using Vertex AI embeddings that semantically matched marketing briefs against image libraries, replacing a manual curation process and returning ranked results in under 2 seconds.</li>
@@ -209,7 +209,7 @@
       </div>
       <ul>
         <li>Designed query patterns and Redis caching strategies for a warehouse management system processing millions of records daily, keeping p95 API response times stable under peak load.</li>
-        <li>Built an automation-rules engine that let non-technical users configure complex business logic without engineering involvement — adopted across the platform and later cited as one of the most maintainable subsystems in the codebase.</li>
+        <li>Designed an automation-rules engine that let operations and support teams configure branching conditions, action triggers, and custom field mappings without filing engineering tickets — eliminating a recurring category of one-off requests that had been consuming sprint capacity across the team.</li>
         <li>Executed a Python 2 to 3 migration across the entire production codebase, coordinating across teams with zero service disruption.</li>
         <li>Owned the GraphQL API layer shared by multiple frontend teams, extending it with new types and resolvers to unblock product work without breaking existing consumers.</li>
       </ul>
@@ -222,7 +222,7 @@
       </div>
       <ul>
         <li>Eliminated the leading source of production incidents on a real-money poker platform by redesigning the banking layer with a data-oriented concurrency model, removing race conditions from financial transactions.</li>
-        <li>Built Django and React/Redux features across a blockchain-based platform with real-money transactions and real-time multiplayer gameplay.</li>
+        <li>Owned the archiving strategy that kept hot transaction and game tables performant as data volume grew, without requiring schema changes or downstream query rewrites.</li>
       </ul>
     </div>
 
@@ -232,8 +232,7 @@
         <span class="job-meta">2015 – 2017</span>
       </div>
       <ul>
-        <li>Introduced unit testing, CI pipelines, and structured code review to a team that had none — reduced regressions; practices stayed in place after I left.</li>
-        <li>Owned technical scoping and estimation across multiple concurrent Django client projects.</li>
+        <li>Introduced unit testing, CI pipelines, and code review to a team that had none; owned technical scoping and estimation across concurrent Django client projects.</li>
       </ul>
     </div>
   </section>
@@ -300,11 +299,8 @@
   <section>
     <h2>Community &amp; Speaking</h2>
     <ul class="community-list">
-      <li>Co-organizer, PyCon Colombia 2019 &amp; 2020 — led the talks and workshops selection track</li>
-      <li>Organizer, PyDay Cali 2018 — first PyDay in Colombia, 250+ attendees</li>
-      <li>Organizer, Django Girls Cali 2018 — first coding workshop for women in the city, 40+ participants</li>
-      <li>Speaker, PyCon Colombia 2018 — "Multitenant Architectures in Python"</li>
-      <li>Speaker, PyCon Colombia 2020 — "Debugging: A Senior's Skill"</li>
+      <li>Co-organizer, PyCon Colombia 2019 &amp; 2020 — curated the talks and workshops track; organized the first PyDay in Colombia (250+ attendees) and a Django Girls workshop (40+ participants)</li>
+      <li>Speaker, PyCon Colombia 2018 — "Multitenant Architectures in Python" &nbsp;·&nbsp; Speaker, PyCon Colombia 2020 — "Debugging: A Senior's Skill"</li>
     </ul>
   </section>
 
