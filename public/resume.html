@@ -193,12 +193,12 @@
         <span class="job-meta">Remote &nbsp;·&nbsp; 2022 – 2026</span>
       </div>
       <ul>
-        <li>Led a 5-person distributed team across simultaneous client engagements in gaming, fintech, and government — owned architecture decisions, API design, technical scoping, and direct client communication; mentored junior engineers through code review and pair programming.</li>
+        <li>Led a 5-person distributed team across simultaneous client engagements in gaming, fintech, and government — owned architecture decisions, API design, technical scoping, and direct client communication; set code review standards and mentored junior engineers on architecture and system design.</li>
         <li>Integrated LLM APIs (OpenAI, Anthropic) and semantic embeddings into production features and internal tooling, cutting workflows that previously took 3–4 hours of manual work down to under 5 minutes and removing human-in-the-loop steps from routine processes.</li>
         <li>Built the AI-powered reentry backend for Recidiviz: a FastAPI + LangChain async service that generates first-draft action plans for caseworkers by processing real-time intake transcripts, audio via Speech-to-Text, and client history from BigQuery — reducing a multi-hour manual review process to an automated draft in under a minute.</li>
         <li>Designed and built the full backend for Virtue Poker, a real-time poker platform: multi-table tournament engine, WebSocket-driven concurrent game state across live sessions, and a banking layer rebuilt to prevent race conditions at the database level.</li>
         <li>Delivered SpudPay end-to-end — a full-stack stablecoin payments platform for agricultural businesses — integrating Brale's Treasury API for on-chain operations and Coinflow for ACH and card processing, from data model to production.</li>
-        <li>Built a multimodal search tool using Vertex AI embeddings that semantically matched marketing briefs against image libraries, replacing a manual curation process and returning ranked results in under 2 seconds.</li>
+        <li>Built an internal marketing tool using Vertex AI multimodal embeddings that semantically matched campaign briefs against image libraries — replaced a manual curation process that required dedicated staff time and returned ranked results in seconds.</li>
       </ul>
     </div>
 
@@ -242,10 +242,6 @@
     <h2>Selected Projects</h2>
     <ul class="projects-list">
       <li>
-        <span class="project-name">Recidiviz — criminal justice platform used by U.S. state governments</span> —
-        Built the reentry backend: a FastAPI + LangChain service that generates LLM-powered first-draft action plans for caseworkers from real-time intake sessions, audio transcription, and BigQuery client data.
-      </li>
-      <li>
         <span class="project-name">SimplyPut — URL security scanner</span> —
         Hexagonal architecture; parallel threat checks (VirusTotal, Google Web Risk, WHOIS, AI-powered intent analysis) streamed to clients via SSE. Stack: FastAPI, PostgreSQL, Redis, Celery.
       </li>
@@ -254,8 +250,8 @@
         Designed and built the game engine from scratch: turn-based state machines, action validation, timeout handling, reconnection, and an AI opponent. Stack: NestJS, Next.js, WebSockets, PostgreSQL.
       </li>
       <li>
-        <span class="project-name">Puput — open-source Django blog engine</span> —
-        Main maintainer. Kept compatibility with new Django and Wagtail releases; 320+ GitHub stars.
+        <span class="project-name">Zetas List — side project</span> —
+        Full-stack match management app for a recreational volleyball group: players register via web or WhatsApp bot, database-level locking prevents race conditions when two players claim the last spot simultaneously, real-time updates via SSE. Stack: NestJS, React 19, PostgreSQL, Railway.
       </li>
     </ul>
   </section>
@@ -266,11 +262,11 @@
     <div class="skills-grid">
       <div class="skill-row">
         <span class="skill-label">Languages</span>
-        <span class="skill-items">Python, TypeScript</span>
+        <span class="skill-items">Python, TypeScript, JavaScript, SQL</span>
       </div>
       <div class="skill-row">
         <span class="skill-label">Platforms</span>
-        <span class="skill-items">FastAPI, Django, Flask, PostgreSQL, Redis, GraphQL, WebSockets, React, NestJS</span>
+        <span class="skill-items">FastAPI, Django, Flask, PostgreSQL, Redis, GraphQL, WebSockets, React, NestJS, pytest</span>
       </div>
       <div class="skill-row">
         <span class="skill-label">AI</span>
