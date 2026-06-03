@@ -1,0 +1,43 @@
+.lead {
+  font-size: var(--step-1);
+}
+
+.follow {
+  margin-top: var(--space-s);
+  color: var(--ink-soft);
+}
+
+.email {
+  display: inline-block;
+  margin-top: var(--space-m);
+  font-family: var(--font-serif);
+  font-size: var(--step-2);
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.email:hover {
+  border-color: var(--accent);
+}
+
+.socials {
+  list-style: none;
+  padding: 0;
+  margin-top: var(--space-l);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-m);
+  font-size: var(--step--1);
+}
+
+.socials a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.socials a:hover {
+  color: var(--accent);
+}
