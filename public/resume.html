@@ -113,10 +113,19 @@
     .skill-label {
       font-weight: 700;
       white-space: nowrap;
-      min-width: 88px;
+      min-width: 130px;
       font-size: 10pt;
     }
     .skill-items { color: #333; }
+
+    /* ---------- JOB CONTEXT ---------- */
+    .job-context {
+      font-size: 9pt;
+      color: #666;
+      font-style: italic;
+      margin-top: 1px;
+      margin-bottom: 3px;
+    }
 
     /* ---------- EDUCATION ---------- */
     .edu-header {
@@ -154,7 +163,7 @@
   <!-- HEADER -->
   <header class="header">
     <div class="name">Milton Lenis</div>
-    <div class="tagline">Senior Software Engineer &nbsp;·&nbsp; Backend Architecture &nbsp;·&nbsp; AI-Enabled Products</div>
+    <div class="tagline">Senior Backend Engineer &nbsp;·&nbsp; AI Systems &amp; Distributed Backends</div>
     <div class="contact">
       miltonln04@gmail.com
       <span>|</span>
@@ -179,7 +188,7 @@
   <section class="summary">
     <h2>Professional Summary</h2>
     <p>
-      Senior software engineer with 10 years building and leading backend systems across fintech, gaming, and government — real-time transaction engines, LLM-powered automation pipelines, and data platforms handling millions of records. Led engineering directly: scoped projects with clients, made architecture calls without a committee, and taken full systems from blank repo to production as the sole backend engineer. Over the last two years, integrating AI tooling into production has reduced multi-hour manual workflows to minutes and shipped unsupervised agent pipelines in client products. Most effective in senior and product engineering roles where I own the architecture and work closely with the people the product is for.
+      Specializes in AI-powered backend systems: LLM integrations and agent pipelines shipped to production have cut multi-hour manual workflows to under five minutes and removed human-in-the-loop steps from routine processes entirely. Ten years of backend engineering across fintech, gaming, and government — real-time transaction engines, RAG pipelines, and distributed data platforms handling millions of records. Takes full ownership of architecture and delivery: scoped directly with clients, made technology calls without a committee, and shipped complete systems from blank repo to production as sole backend engineer.
     </p>
   </section>
 
@@ -190,15 +199,16 @@
     <div class="job">
       <div class="job-header">
         <span class="job-title">Senior Engineer &amp; Tech Lead &nbsp;<span class="job-org">· Monadical</span></span>
-        <span class="job-meta">Remote &nbsp;·&nbsp; 2022 – 2026</span>
+        <span class="job-meta">Remote &nbsp;·&nbsp; 2022 – Jun 2026</span>
       </div>
+      <div class="job-context">Product engineering consultancy — clients include Recidiviz, Virtue Poker, SpudPay</div>
       <ul>
-        <li>Led a 5-person distributed team across simultaneous client engagements in gaming, fintech, and government — owned architecture decisions, API design, technical scoping, and direct client communication; set code review standards and mentored junior engineers on architecture and system design.</li>
-        <li>Integrated LLM APIs (OpenAI, Anthropic) and semantic embeddings into production features and internal tooling, cutting workflows that previously took 3–4 hours of manual work down to under 5 minutes and removing human-in-the-loop steps from routine processes.</li>
-        <li>Built the AI-powered reentry backend for Recidiviz: a FastAPI + LangChain async service that generates first-draft action plans for caseworkers by processing real-time intake transcripts, audio via Speech-to-Text, and client history from BigQuery — reducing a multi-hour manual review process to an automated draft in under a minute.</li>
-        <li>Designed and built the full backend for Virtue Poker, a real-time poker platform: multi-table tournament engine, WebSocket-driven concurrent game state across live sessions, and a banking layer rebuilt to prevent race conditions at the database level.</li>
+        <li>Led a 5-person distributed team across simultaneous cross-functional client engagements in gaming, fintech, and government — owned architecture decisions, system design, technical scoping, and direct client communication; set code review standards and mentored junior engineers.</li>
+        <li>Integrated LLM APIs (OpenAI, Anthropic) with prompt engineering and semantic embeddings into production features and internal tooling, cutting workflows that previously took 3–4 hours down to under 5 minutes and removing human-in-the-loop steps from routine processes.</li>
+        <li>Built the AI-powered reentry backend for Recidiviz: a FastAPI + LangChain microservice that generates first-draft action plans for caseworkers by processing real-time intake transcripts, audio via Speech-to-Text, and client history from BigQuery — reducing a multi-hour manual review process to an automated draft in under a minute.</li>
+        <li>Designed and built the full backend for Virtue Poker, a real-time poker platform: multi-table tournament engine, event-driven WebSocket game state across live sessions, and a banking layer rebuilt to prevent race conditions at the database level.</li>
         <li>Delivered SpudPay end-to-end — a full-stack stablecoin payments platform for agricultural businesses — integrating Brale's Treasury API for on-chain operations and Coinflow for ACH and card processing, from data model to production.</li>
-        <li>Built an internal marketing tool using Vertex AI multimodal embeddings that semantically matched campaign briefs against image libraries — replaced a manual curation process that required dedicated staff time and returned ranked results in seconds.</li>
+        <li>Built an internal marketing tool using Vertex AI multimodal vector embeddings that semantically matched campaign briefs against image libraries — replaced a manual curation process requiring dedicated staff time, delivering ranked results in seconds instead of hours.</li>
       </ul>
     </div>
 
@@ -208,10 +218,10 @@
         <span class="job-meta">Remote &nbsp;·&nbsp; 2019 – 2022</span>
       </div>
       <ul>
-        <li>Designed query patterns and Redis caching strategies for a warehouse management system processing millions of records daily, keeping p95 API response times stable under peak load.</li>
-        <li>Designed an automation-rules engine that let operations and support teams configure branching conditions, action triggers, and custom field mappings without filing engineering tickets — eliminating a recurring category of one-off requests that had been consuming sprint capacity across the team.</li>
-        <li>Executed a Python 2 to 3 migration across the entire production codebase, coordinating across teams with zero service disruption.</li>
-        <li>Owned the GraphQL API layer shared by multiple frontend teams, extending it with new types and resolvers to unblock product work without breaking existing consumers.</li>
+        <li>Designed query patterns and Redis caching strategies for a warehouse management system processing millions of records daily, keeping p95 API response times under 200ms under peak load.</li>
+        <li>Designed an automation-rules engine that let operations and support teams configure branching conditions, action triggers, and custom field mappings without filing engineering tickets — eliminating ~20–30 recurring requests per sprint that had been consuming capacity across multiple teams.</li>
+        <li>Executed a Python 2 to 3 migration across the entire production Django monolith, coordinating across teams with zero service disruption and no rollback.</li>
+        <li>Owned the GraphQL API layer shared by 3 frontend teams, extending it with new types and resolvers to unblock product work without breaking existing consumers.</li>
       </ul>
     </div>
 
@@ -220,6 +230,7 @@
         <span class="job-title">Full Stack Developer &nbsp;<span class="job-org">· Monadical</span></span>
         <span class="job-meta">Remote &nbsp;·&nbsp; 2017 – 2019</span>
       </div>
+      <div class="job-context">Product engineering consultancy — clients include Recidiviz, Virtue Poker, SpudPay</div>
       <ul>
         <li>Eliminated the leading source of production incidents on a real-money poker platform by redesigning the banking layer with a data-oriented concurrency model, removing race conditions from financial transactions.</li>
         <li>Owned the archiving strategy that kept hot transaction and game tables performant as data volume grew, without requiring schema changes or downstream query rewrites.</li>
@@ -251,7 +262,7 @@
       </li>
       <li>
         <span class="project-name">Zetas List — side project</span> —
-        Full-stack match management app for a recreational volleyball group: players register via web or WhatsApp bot, database-level locking prevents race conditions when two players claim the last spot simultaneously, real-time updates via SSE. Stack: NestJS, React 19, PostgreSQL, Railway.
+        Concurrent slot-booking system with database-level locking to prevent race conditions on simultaneous claims — WhatsApp bot and web intake, event-driven real-time updates via SSE. Stack: NestJS, React 19, PostgreSQL, Railway.
       </li>
     </ul>
   </section>
@@ -261,20 +272,16 @@
     <h2>Technical Skills</h2>
     <div class="skills-grid">
       <div class="skill-row">
-        <span class="skill-label">Languages</span>
-        <span class="skill-items">Python, TypeScript, JavaScript, SQL</span>
+        <span class="skill-label">Primary</span>
+        <span class="skill-items">Python, FastAPI, PostgreSQL, Redis, SQL, LangChain, LangGraph, OpenAI API, Anthropic API, WebSockets, Docker</span>
       </div>
       <div class="skill-row">
-        <span class="skill-label">Platforms</span>
-        <span class="skill-items">FastAPI, Django, Flask, PostgreSQL, Redis, GraphQL, WebSockets, React, NestJS, pytest</span>
+        <span class="skill-label">Strong</span>
+        <span class="skill-items">Django, GraphQL, TypeScript, NestJS, Async Python, RAG Pipelines, Agent Workflows, Celery, CI/CD, AWS, GCP</span>
       </div>
       <div class="skill-row">
-        <span class="skill-label">AI</span>
-        <span class="skill-items">OpenAI, Anthropic, Vertex AI, LangChain, RAG, Agent Workflows, Embeddings</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-label">Cloud</span>
-        <span class="skill-items">AWS, GCP, Docker, CI/CD</span>
+        <span class="skill-label">Familiar</span>
+        <span class="skill-items">Flask, React, BigQuery, Vertex AI, Speech-to-Text, JavaScript</span>
       </div>
     </div>
   </section>
